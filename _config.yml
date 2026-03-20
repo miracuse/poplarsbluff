@@ -1,8 +1,44 @@
-title: Just the Docs Template
-description: A starter template for a Jeykll site using the Just the Docs theme!
-theme: just-the-docs
+# Site Settings
+title: Poplar's Bluff
+email: gyeosalom@gmail.com
+description: A blog for Neverwinter Nights content.
 
-url: https://just-the-docs.github.io
+# Main Directory
+source: contents
 
-aux_links:
-  Template Repository: https://github.com/just-the-docs/just-the-docs-template
+# Plugins
+plugins:
+  - jekyll-relative-links
+
+# Build Exclusions
+exclude:
+  [
+    "Makefile",
+    "README.md"
+  ]
+
+sass:
+  quiet_deps: true # https://github.com/just-the-docs/just-the-docs/issues/1541
+  silence_deprecations: ['import'] # https://github.com/just-the-docs/just-the-docs/issues/1607
+
+theme: "just-the-docs"
+favicon_ico: "/assets/img/favicon.ico"
+color_scheme: poplar
+
+callouts:
+  highlight:
+    color: yellow
+  important:
+    title: Important
+    color: blue
+  new:
+    title: New
+    color: green
+  note:
+    title: Note
+    color: purple
+  warning:
+    title: Warning
+    color: red
+  summary:
+    color: orange
