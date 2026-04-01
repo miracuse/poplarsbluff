@@ -46,9 +46,14 @@
     <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
     <script src="https://cdn.datatables.net/2.3.7/js/dataTables.js"></script>
     <script defer type="module">
+    DataTable.defaults.layout = {
+        topStart: null,
+        topEnd: "search",
+    };
     let table = new DataTable('#Vault', {
         scrollY: '',
         paging: false,
+        order: [[5, 'desc']],
     });
 
     $(document).ready( function () {
@@ -60,6 +65,19 @@
 
 
 {{ content }}
+
+<ul>
+  <li>Click <a href="../index.html">here</a> to go back to the blog.</li>
+  <li>Hover over a module's title to display its description.</li>
+  <!-- <li>Hover over the info icon for a breakdown of the Popularity Score. <b title="Scored out of 25 points. Hall of Fame (+10), updated in the past five years (+5), at least ten votes on the Vault (+5), at least twenty votes on the Vault (+5).">&#9432;</b></li> -->
+   <li>Popularity Score Breakdown
+    <ul>
+      <li>(+10) Hall of Fame</li>
+      <li>(+05) Updated in Past Five Years</li>
+      <li>(+05) >= 10 Votes on the Vault</li>
+      <li>(+05) >= 20 Votes on the Vault</li>
+    </ul>
+</ul>
 
 <table id="Vault" class="display">
 
@@ -95,15 +113,6 @@
 <td>English, Hall of Fame</td>
 </tr>
 <tr>
-<td><a href=https://neverwintervault.org/project/nwn2/module/zombie-fest title="Zombie Fest is a strategic survival horror module that challenges players to survive a Zombie Apocalypse with minimal resources. It is based on the board game Zombie Town, but of course has that DnD element that makes it unique.Players begin with minimal equipment based on their class and they are thrown straight into the action without warning (yes, you will be stripped of ALL gear!). While the object of the game is to simply survive long enough to escape, the means are much more involved and vary depending on the players' style.The town is small and laid out very simply (it is based more on function rather than realism). A graveyard sits right in the middle, while twelve buildings surround the town's boundary. Zombies will spawn at the graveyard every game-hour and they will spawn in greater numbers as more players join the fun and as time passes by. Additional undead creatures can spawn in some cases, but I won't spoil the surprise. ;)Each building has a specific function and can su...">Zombie Fest!</a>
-<td>Disordah!</td>
-<td>10521</td>
-<td>2014-08-15</td>
-<td>2014-09-05</td>
-<td>0</td>
-<td>English</td>
-</tr>
-<tr>
 <td><a href=https://neverwintervault.org/project/nwn2/module/xenothya title="XENOTHYA By: NKT88 WARNING: Contains explicit adult materials, suggestive themes and graphic images that might be disturbing to some viewers, discretion is advised, not for those under 18. WHAT MOD IS THIS? This is single player storyline driven campaign, if you're the type of sandbox styled free roaming adventurer, this mod might be less appealing, though linear, it does not mean that the quests always have to be done in order. CHARACTER This mod has to be played with provided customized character who will serve as the main protagonist for the entire campaign, due to how the storyline and the mod were designed, doesn't support any other races and gender, you can play with standardly created female human character if you want, but it would get you an incompatibility with the mod standard and storyline, so it is very, very not recommended. FEATURES/CHANGES Spells: Spells are overhauled and more powerful, some even work differently to match the standard, they are not supposed to do a fix...">Xenothya</a>
 <td>NKT88</td>
 <td>927703</td>
@@ -120,15 +129,6 @@
 <td>2015-12-05</td>
 <td>10</td>
 <td>English, Hall of Fame, Roleplay</td>
-</tr>
-<tr>
-<td><a href=https://neverwintervault.org/project/nwn2/module/witch-wood-grimms-fairy-tale title="To play, unpack this zip file and place in your Neverwinter Nights 2/modules folder.">Witch In the Wood: A Grimm's Fairy Tale</a>
-<td>Lord Niah</td>
-<td>7716</td>
-<td>2014-09-13</td>
-<td>2014-09-19</td>
-<td>0</td>
-<td>English</td>
 </tr>
 <tr>
 <td><a href=https://neverwintervault.org/project/nwn2/module/wintervall title="Jingle bell, Blessed bell,Silent night tonight.Wintervall Festival,Baatezu's delight.Description:A short holiday themed combat-centric Christmas present to the community. This is a one hourish long module and a pseudo-sequel to 'Cry Wolf'. (You don't need to play that first though!)Features:About 45-60 minutes play timeChallenging combatsDark but Humorous storyStoryteller mechanicUnique scoring systemRoleplay/Skill use LightAboutNow, the whole thing was knocked up in a few night's work, so don't expect a masterpiece. However faced with the traditional aprez-lunch Oldster ailment and illness monolog, this short module may just be a viable alternative until they drift off to sleep!Happy Wintervall all,LorftKeep up to date with Lorft's work over at LinkMoTB requiredUnzip the .mod file to your modules directory to play.________________________________________IGN Vault Download ListingNameTypeSizeDownloadsWintervall.zipzip8.1Mb1005 ">Wintervall</a>
@@ -174,15 +174,6 @@
 <td>2025-10-18</td>
 <td>5</td>
 <td>English, Multiplayer</td>
-</tr>
-<tr>
-<td><a href=https://neverwintervault.org/project/nwn2/module/war-grounds-x title="A fun little hack-n-slash with many areas to enjoy. Uses NESS and Heeds Fishin Hak, the absolute must have for any module, IMHO. Oh be sure you install this in the My Documents/Neverwinter Nighte2/modules directory, and intall Heeds fishing Hak in the Hak directory ( also under My Documents ), failure to do this will cause the module not to load. For even more fun, I would also install the Complete Crafteman mod by CrossbowXIV. All these are available right here at nwvault.( I hope I got all those name right. )">War Grounds X</a>
-<td>StrideC</td>
-<td>65137</td>
-<td>2014-08-15</td>
-<td>2015-05-30</td>
-<td>0</td>
-<td>English, Hack & Slash</td>
 </tr>
 <tr>
 <td><a href=https://neverwintervault.org/project/nwn2/module/war title="Roleplay: light to noneHack'n'Slash: Very HeavyPuzzles: light to noneTraps: lightVersion: 0.66betaRelease: 11/23/2007MotB: RequiredNWN2 version: 1.10Welcome to the fray of battle!This mod represents my learning experience as a builder and scripter, and might provide you with a couple hours (if that much) of fun. I'll be releasing further mods that add into the campaign as I finish them, so you know, this is not a finished campaign. If anyone else wants to use what I've done or continue the project, just give credits where they are due.Features:  -NO MAGIC yes, you heard it. This is a campaign focused on warriors, with the participation of rogue types. -NEW CRAFTING SYSTEM, much simpler. Just examine the smith hammer and you'll know what to do.  Installation:(Under My Documents\Neverwinter Night 2\)  War*.mod in the ..\Modules War2da.hak in the ..\hak War folder in the ..\Campaigns Webs folder in the ..\Override  Credits: HellCow for the webs; Simaon for several interior areas; David Ga...">War</a>
@@ -239,6 +230,15 @@
 <td>English</td>
 </tr>
 <tr>
+<td><a href=https://neverwintervault.org/project/nwn2/module/untold-tales-tolkien-umbral-abyss-chapter-1-demo title="This is the demo of Chapter 1 of the Umbral Abyss Campaign, a direct sequel to The Indanthrine Prince. This chapter is the first of three which make up the full version of the campaign. In comparison to the other chapters, it is quite short, but should provide up to 8 hours of gameplay. Events lead on approximately a yearafter those of The Indanthrine Prince.The demo content is SUBJECT TO CHANGE. There are elements we wish to add to it, so what you see is not necessarily an indication of the final content of the full version. Every effort has been made to test this demo and ensure that it works as well as possible with our limited resources to test every eventuality. We appreciate any reports of problems encountered so that we can prevent reoccurences in later versions. At this time of writing, we hope to complete the full Umbral Abyss by late 2014, though this is by no means a promise. The project currently stands at just over half completion.   * Comments & Feedback: [email protected...">Untold Tales Of Tolkien: The Umbral Abyss (Chapter 1 Demo)</a>
+<td>MERP UK</td>
+<td>81865</td>
+<td>2014-07-17</td>
+<td>2014-07-17</td>
+<td>0</td>
+<td>English</td>
+</tr>
+<tr>
 <td><a href=https://neverwintervault.org/project/nwn2/module/untold-tales-tolkien-indanthrine-prince-demo title="This is a DEMO version of The Indanthrine Prince for NWN2. It is in early stages still and what you see is quite far from the finished article, but enough, we feel, to give a small taster of the story  to follow and the types of changes and improvements we have in store.There may be (in fact, there are) small details and polishings to certain features missing, but feel free to point out anything that seems glaringly wrong. As always, we welcome constructive feedback - we want the game to be fun, afterall.For followers of the NWN1 IP module, this module will be a re-make of the original, with considerable expansion upon the story, some restructuring of the story telling and other cool new stuff that our first experience with making single player/team mods has given us. We intend to then continue the series by making the follow-up two modules in the story.There is about 2-3 hours of content, depending on how you choose to play. There are no additional files needed to play the DEMO versio...">Untold Tales Of Tolkien: The Indanthrine Prince DEMO</a>
 <td>MERP UK</td>
 <td>37012</td>
@@ -263,6 +263,15 @@
 <td>2015-11-21</td>
 <td>2021-06-10</td>
 <td>10</td>
+<td>English</td>
+</tr>
+<tr>
+<td><a href=https://neverwintervault.org/project/nwn2/module/unholy-pvp-arena title="Name  Unholy PvP ArenaAuthor  Joachim the Dungeon MasterSubmitted / Updated  11-18-2006 / 11-26-2006Category  Multiplayer (5 - 10 Players)Module Types   Scope  SmallContent  EveryoneTricksTraps  NonexistentRoleplay  NonexistentHackSlash  HeavyLevelMin  01LevelMax  05Gameplay Hours  01Categories  ArenaPvPPatch  1.00Description===================================Unholy PvP Arena.Small Area Level 1-5 PvP Arena====================================www.unholycovenant.com/nwn/nwn.php====================================Direct Connect: unholycovenant.org====================================email author: [email protected]====================================This small PvP arena let's you enjoy two areas:1) Staging Area: Levels up to level 5 and can purchase equipment and gold2) PvP Arena: Outdoor arena. Player is ported to one of 4 random locations. From there, you can start bashing each other.Includes the .MOD and .PWC files which are both required for play. Check your My Documents\Neverwinter Nigh...">Unholy PvP Arena</a>
+<td>Joachim the Dungeon Master</td>
+<td>6702</td>
+<td>2014-08-27</td>
+<td>2014-08-27</td>
+<td>0</td>
 <td>English</td>
 </tr>
 <tr>
@@ -311,6 +320,15 @@
 <td>English, Hack & Slash</td>
 </tr>
 <tr>
+<td><a href=https://neverwintervault.org/project/nwn2/module/twilight-zone title="no level restriction and here is the mod so u can join my server at anytime and there is few area to play in and custom made items to get._________________________________IGN Vault Download ListingNameTypeSizeDownloadsReadMe.rarrar0.22b825NewPWCTwilightZonev3.rarrar534Kb983another version updated mods!! ">Twilight Zone</a>
+<td>UniqueRose</td>
+<td>547</td>
+<td>2014-08-15</td>
+<td>2014-09-05</td>
+<td>0</td>
+<td>English</td>
+</tr>
+<tr>
 <td><a href=https://neverwintervault.org/project/nwn2/module/trinity title="One man seeks to make the Dalelands his. Will you be the one to stop him?Set in the Dalelands region of the Forgotten Realms, Trinity is a party-based, single-player, stand-alone adventure inspired by classic PnP gameplay. For levels 6 to 8, with up to 7 hours of playing time (or more!).The story takes place in 1375 DR, in the same general period as the NWN2 official campaigns. It is partly inspired by Ed Greenwood's PnP module called 'Into the Forgotten Realms' (published in Dragon Magazine #85, 1985).Opening Movie and Teaser TrailerScreenshot GalleryNEWSFebruary 16, 2011 : today is the one year anniversary of the current version. To celebrate, I'm working on a new edition, out soon!Alazander (AL series, MoW) and Tiberius (Saleron's Gambit, MoW, the upcoming Maimed God Saga) review Trinity.You like the Soloria cloak? Take it with you!Get the complete mp3 official soundtrackTrinity featured on Korean community siteUpdate 1.05 available: now with in-game levelling up!Builders: use Trini...">Trinity</a>
 <td>E.C.Patterson and Gaming Parents Studios</td>
 <td>734224</td>
@@ -354,15 +372,6 @@
 <td>2015-05-26</td>
 <td>15</td>
 <td>English, Hall of Fame</td>
-</tr>
-<tr>
-<td><a href=https://neverwintervault.org/project/nwn2/module/tonolin title="Tonolin by andgalfThis is the 6th installment in the 'A Strange World' series. It is set in the same world as A Strange World 2, A Strange World 3 and At A Distant Shore. This is a single player story driven module/campaign for a level 1 male player character of any alignment in a custom world (or worlds, actually). (Need to play a male character - the story won't make sense with a female character. Sorry!) Most of the dialogue choices assumes you're not an evil character. This is a standalone adventure and you don't need to have played any of the other 5 modules in the A Strange World series. However, things like lore, locations and other stuff mentioned might confuse you a bit if you haven't played the other modules in the series. There are a few cameos from the previous installments, and also references to events taking place in the other entries in the series.The playing time is around 9 hours. There's lots of talking in the module/campaign and it focuses quite a bit on romance. Th...">Tonolin</a>
-<td>andgalf</td>
-<td>2097499</td>
-<td>2024-12-15</td>
-<td>2025-03-19</td>
-<td>5</td>
-<td>English, Romance</td>
 </tr>
 <tr>
 <td><a href=https://neverwintervault.org/project/nwn2/module/tomoachan title="Tomoachan is an adaptation of C1: The Hidden Shrine of Tomoachan, a module that was originally used for the Official Advanced Dungeons & Dragons tournament at Origins 1979, and was the first in series of modules from TSR, the Competition Series. The module has been adapted and expanded from the original. If you are a min/max, power gamer, I'd recommend trying this mod on a hard difficulty setting or with no more than a 4th level character.  	This adventure is ideal for single player. 4th or 5th level male characters are very strongly recommended. Humans, half-elfs, and elves are encouraged. There is a 'romance' with a human woman featured prominently in the plot, thus the recommendation. There are a few references that indicate the player is definitely a man, but if you don't mind overlooking this and want to romance a human woman with a halfling woman, go to town!  	I would recommend this module for teen or older due to content.  	The module represents a good mix of role playing, hack...">Tomoachan</a>
@@ -419,6 +428,15 @@
 <td>English</td>
 </tr>
 <tr>
+<td><a href=https://neverwintervault.org/project/nwn2/module/these-dark-days-waiting title="Thunder Bay has a new Lord and you have a new employer. Despite the promise of rest and recuperation he has one more job for you to do before you can settle down in front of that log fire for a few weeks.Hal Tysans life is in turmoil, just hours ago he was the only child of a dying father and a loving mother. In the intervening time his father has died, his mother has left his side and he has discovered he is not an only child. His elder half brother is dead, killed at the hands of yourself and your party and his younger half sister is living in a small village somewhere on the outskirts of the lands belonging to Crossroads keep.And there, adventurer, is where you come in ... Hal Tysan wants his sister back, preferably alive this time, and you are to go and get her. As ever you have help but with Honour returned to her stepfather, Solace persuing her own goals and Harald facing the justice of Lord Nasher in Neverwinter your friends are looking thin on the ground.Still; all you have to ...">These Dark Days of Waiting</a>
+<td>PJ156</td>
+<td>276044</td>
+<td>2014-07-18</td>
+<td>2015-05-26</td>
+<td>10</td>
+<td>English, Hall of Fame</td>
+</tr>
+<tr>
 <td><a href=https://neverwintervault.org/project/nwn2/module/zelbross-affair title="A single-player, first-level NWN2 module. The Zelbross Affiar can be characterized as a linear hack and slash, but there are role-playing options and some non-linear aspects. Six companions are available to choose from in assembling a maximum party of four (PC plus 3 companions). Multiple endings for 'good' and 'evil' and even something in-between. The module is relatively short (~4 hours), but your character will advance to level 3 or 4, depending on how thorough you are.Zelbross is home to about 120 folk, mostly quiet farmers and craftsmen. Zelbross lies in the Delimbiyr region of the North, near the Sword Coast and can be found north of the High Moor and South of the High Forest, sitting between the Delimbiyr Route and the River Shining (aka the Delimbiyr). Its nearest neighbors are Secomber to the west and Loudwater to the East. This region is notorious monster territory and travel here is dangerous. Most folk stumble into Llorkh and Loudwater grateful that people actually dwell in...">The Zelbross Affair</a>
 <td>Seryn</td>
 <td>84290</td>
@@ -464,15 +482,6 @@
 <td>English, Hall of Fame, Roleplay</td>
 </tr>
 <tr>
-<td><a href=https://neverwintervault.org/project/nwn2/module/unexpected-adventure title="CALLING ALL MODDERS!!!I am hoping to assemble a team to put together what I would like to be a full length (Level 1-30 ) campaign with a little bit of everything for all classes. I am hoping with this project we can showcase some of the best talent in the modding community, and make something that will be a lot of fun for everyone.I have submitted a very small portion of what I have so far. (The whole comes to Roughly 100 areas, thousands of items, characters, scripts, etc.) Hopefully what I have submitted here will give you an idea of what I have in mind. I am going for something somewhat non-linear, with lots of variety, humor and adventure.(Sort of like a combination of Tortured Hearts and Boutique Du Temps with a little bit of Daggerford thrown in.) with unique items, areas, creatures, crafting and lots of optional side quests.I was so disappointed with NWN2 the day it came out, that I immediately started to learn the Toolset in order to make something better, and well, I think I'v...">The Unexpected Adventure</a>
-<td>shannonjoeker</td>
-<td>52350</td>
-<td>2017-09-20</td>
-<td>2017-09-20</td>
-<td>0</td>
-<td>English, Roleplay</td>
-</tr>
-<tr>
 <td><a href=https://neverwintervault.org/project/nwn2/module/third-sign title="The Third Sign is book written by Gregory A. Wilson brought to you in Neverwinter Nights 2 module-forum by Alex 'Hugie' Hugon. The module was a contracted work intended to promote the release of the novel, which will be published by Five Star Press in June 2009 and available for purchase at Amazon.com or at your local bookstore. The primary motivation behind this teaser project is to immerse you in the world of Klune and inspire you to purchase the book when it is published. Note that as a module conversion, TTS is, by nature, rather linear at points. You are expected to use the provided pregenerated character, Calen Gollnet (the novel's protagonist). The focus of this project was on creating an interactive novel -- on bringing the book to life in 3-d. If you are looking for a hack-n-slash or roleplay-heavy module, this may not be what you are looking for. The focus of The Third Sign module was on immersion through atmosphere, narrative, and plot-furthering cutscenes.Features:  Profess...">The Third Sign</a>
 <td>Alex "Hugie" Hugon & Gregory A. Wilson</td>
 <td>55944</td>
@@ -516,15 +525,6 @@
 <td>2015-05-26</td>
 <td>15</td>
 <td>English, Hall of Fame</td>
-</tr>
-<tr>
-<td><a href=https://neverwintervault.org/project/nwn2/module/spire-malice-chapter-1 title="The Spire of Malice, Chapter 1:  The Red Father Update 2.0 (see Revision History)This is the story of how I went to Hell.- - - - - - - - - - -Introduction- - - - - - - - - - -After receiving a letter from three renowned mages, you have been invited to explore the legendary ruin, Altheha Eigi, which is said to be the site  of The First Atrocity -- a horrific event whose details have been lost to history that modern scholars often refer to as 'The Fall'.  Over seven billion died there in a thirty three day siege with three great witches known as the Mothers: Suspiria, Lachrymosa, and Tenebrae. As it happens, you are the most prominent researcher in the field on this very place and subject, although like everyone else -- you've never set foot inside, since the spire been bound shut and sealed for nearly 1000 years. Except, the letter says, that that's not quite true now.  The door is . . . open.  Inexplicably.  Won't you come inside?It is known that the Spire was finally sealed, but not d...">The Spire of Malice, Chapter 1</a>
-<td>coercer.angra</td>
-<td>362274</td>
-<td>2013-07-02</td>
-<td>2014-08-31</td>
-<td>0</td>
-<td>English, Horror</td>
 </tr>
 <tr>
 <td><a href=https://neverwintervault.org/project/nwn2/module/soul-cages-chapter-1-loose-ends title="Honour, your long time adventuring companion needs to find her mother. Many years earlier they were separated when she was taken into the foster care of her uncle and, the last she heard was that her mother inhabited the gang controlled flesh pots and low places in the Mistshore area of the great city of Waterdeep. In truth she is not sure her mother is still alive, and if she is, she is not sure how much she cares. She knows that she must find her though, she is determined to meet with her one last time.But your task is not so simple and it soon becomes obvious that you are not the only ones seeking Maria Lestry. It appears that the difficulty is not just going to be in finding her, but in making sure you are the only ones who find her and not getting her or yourself killed along the way.This module follows on from the module series Tales from the lake of Sorrows. The story begins a few months after the ending of Vault of the Damned and carries on with the story threads from that modu...">The Soul Cages - Chapter 1 Loose Ends</a>
@@ -574,10 +574,19 @@
 <tr>
 <td><a href=https://neverwintervault.org/project/nwn2/module/scroll title="The Althea Campaign: The Scroll (The First Day) *** NOT CURRENTLY COMPATIBLE WITH THE NWN2 ENHANCED EDITION*** WALKTHROUGH PDF NOW AVAILABLE !!! WARNING: Do NOT apply any cheats with this module, as they break the module. I have witnessed broken scripts and drastic balance issues that do not favour the player applying the cheats. Please contact me if you want help playing, but do not resort to cheats.This module is not like any other module that can have such workarounds easily applied without breaking it. Thank you for your understanding.The Scroll is a traditional D&D story set within my own campaign called, The World of Althéa. The campaign was first written in the late 1980's and was moved to NWN2 when it became available. As the campaign is now available to both existing PnP players and newcomers, there is a choice of backgrounds to choose from. Newcomers should choose option 2 (Althéa History & Background: https://theworldofalthea.wixsite.com/home): This module has taken years to...">The Scroll</a>
 <td>Lance Botelle</td>
-<td>1333647</td>
+<td>1333608</td>
 <td>2016-05-04</td>
-<td>2026-03-24</td>
+<td>2026-04-01</td>
 <td>5</td>
+<td>English</td>
+</tr>
+<tr>
+<td><a href=https://neverwintervault.org/project/nwn2/module/ritual title="The Life and Times of our hero Jon Barleycorn.......... and a little voices project.............*The advantage of a one-person team creating your modules, you always know WHO made the mistake.. !LOL!Please let me introduce myself:My name is Michael Brown (GrandaddyBonegrinder). I'm a 58-year-old iconoclast, happily married to my soulmate, Lingaz.My hobbies include metal-art, web-site design, computer graphic art and (of course) fantasy role-playing. I have been a DM, creating scenarios for my loyal fans, for more than 30 years. My take on most computer role-playing games:Censorship takes away from the 'reality of the fantasy' ('G rating').You always have to kill everybody (with few exceptions).You are always rushed through the early levels (because you're so weak).With the above three items in mind, I created The Ritual, my first experience with the NWN2 toolset.My primary goals for this module were: First and foremost, the Ritual was created so I could learn the toolset, and create a ...">The Ritual</a>
+<td>GrandaddyBonegrinder</td>
+<td>9128</td>
+<td>2014-09-06</td>
+<td>2014-09-19</td>
+<td>0</td>
 <td>English</td>
 </tr>
 <tr>
@@ -653,30 +662,12 @@
 <td>English, Multiplayer</td>
 </tr>
 <tr>
-<td><a href=https://neverwintervault.org/project/nwn2/module/lighthouse title="What secrets hide in the old abandoned lighthouse on the tiny island of Ender's Point?This is a tiny module for a single character of level 3. Expect only between 10 and 20 minutes of gameplay, at most. It is the first module (out of about a million) that I have actually finished to the point of being somewhat worthy of release. I did it purely to get to know the new toolset, and to prove to myself that I could actually finish something, however small. So all things considered, don't expect anything big or fancy, but feel free to enjoy it for what it is.______________________IGN Vault Download ListingNameTypeSizeDownloadslighthouse.zipzip5.4Mb2364 ">The Lighthouse</a>
-<td>UnseenOne</td>
-<td>5692</td>
-<td>2014-09-15</td>
-<td>2014-09-19</td>
-<td>0</td>
-<td>English</td>
-</tr>
-<tr>
 <td><a href=https://neverwintervault.org/project/nwn2/module/last-danaan title="You have grown up on the frontier of the Empire, getting by with a little hunting and the few head of cattle you raise with Dei'dre Dana'an, daughter of old ranger famous for his exploits during the last Goblin War. His Dana'an Rangers have kept the peace since then, but a new time of troubles is approaching, and soon you will be called to join their ranks and fight to restore the peace that was lost.This module is a single-player module in a low gold, low magic setting. It is intended for new characters starting at level 1, with an estimated playing time of 20 hours. Characters should reach level 10, although level 12 or higher is possible. The sequel is The Dana'an Unvanquished.The module requires Adonnay's Elven Weaponry and Escrimator's Hand Axes.Features:NPC soldiers fight in squads, usings a variety of tactics, and will rout and flee if they are seriously wounded or if their leaders are killed.Many quests can be completed using speed or stealth instead of brute force, but the pla...">The Last of the Danaan</a>
 <td>J.E. McKellar</td>
 <td>99560</td>
 <td>2014-07-15</td>
 <td>2022-07-27</td>
 <td>20</td>
-<td>English, Hall of Fame</td>
-</tr>
-<tr>
-<td><a href=https://neverwintervault.org/project/nwn2/module/last-days-raven title="Fifty missing men! All that stands between Tysan and the security for his family that he has worked a lifetime to achieve. Now, as illness brings Tysan's days to a close, and Lord Nasher threatens to direct his inheritance to the temple of Lathander, the future and fortune of Tysan's family hangs in the balance. Just one document stands between Lord Tysan and the redemption he needs; a muster confirmation. Sealed with the arms of Lord Nasher himself.With the documents long gone the quest to help Lord Tysan seems futile. Not all have lost hope however, Cleric Ormin still holds the belief that his patron can be cleared and the shadow hanging over his family lifted. The proof is there to be found but he cannot find it alone.Not twenty four hours after your fight with Taneth you are swept up by the events going on around you again. Instead of the hard earned rest you deserve you find yourself travelling to Thunder Bay in search of answers from the cleric Ormin.Once there, instead of answer...">The Last Days of the Raven</a>
-<td>PJ156</td>
-<td>162236</td>
-<td>2014-07-18</td>
-<td>2015-05-26</td>
-<td>10</td>
 <td>English, Hall of Fame</td>
 </tr>
 <tr>
@@ -716,15 +707,6 @@
 <td>English</td>
 </tr>
 <tr>
-<td><a href=https://neverwintervault.org/project/nwn2/module/hermits-chalice-update-0 title="And now for a totally shameless plug... My rendition of The Hermit's Chalice for NWN2 is finally in beta testing! I've run through it twice so far, once as an elf wizard and once as a human bard. I've found and fixed a bunch of errors, mostly typos so far but more than a few functional issues. There is still some very buggy NPC companion behavior, but this too shall pass. I just have to figure out why the companions forget that they're companions whenever you transition btw areas or adjust their inventory or spellbook, etc.Here are a few screens. Hope you enjoy. And once again, a HUGE thanks to the community for all the help you've provided! Far too many names to mention here.I hope to have it tested once more and fixed in the next month. Once it is, I will post on the Vault for all to try. ">The Hermit's Chalice - UPDATE</a>
-<td>angry_yard_gnome (Dave)</td>
-<td>0</td>
-<td>2020-03-14</td>
-<td>2020-03-14</td>
-<td>0</td>
-<td>English</td>
-</tr>
-<tr>
 <td><a href=https://neverwintervault.org/project/nwn2/module/hermits-chalice-update title="So I have finally completed about 90% of the mod. Most importantly, I've finished the hak pack for the mod.  Here's a quick peek at the beasties that players will get to face in the mod.I still have to tie up loose ends, like some scripts, journal entries, and some conversations.  A few more weeks and I expect it will be ready for a few rounds of testing.  Once I finish the tests and fixing the problems I'll inevitably find, it'll be ready to post.Dave">The Hermit's Chalice - Update</a>
 <td>angry_yard_gnome (Dave)</td>
 <td>0</td>
@@ -752,19 +734,28 @@
 <td>English</td>
 </tr>
 <tr>
-<td><a href=https://neverwintervault.org/project/nwn2/module/heist-neverwinter-lights-casino title="It is with great pleasure that I am able to announce the public release of the Neverwinter Casino combined single and multiplayer experience package.The current download includes the original single player experience with many bug fixes, as well as our brand new multiplayer package. Blackjack, Roulette, Texas Hold'em, Seven Card Stud, Five Card Draw, and Craps are all implemented with full 4 player multiplayer tables. Slots and Chinchirorin are now usable as single player games within a multiplayer environment. Each game has been outfitted with an anti-abuse (time-out) system, as well as fully compliant with our new leaderboards.As usual, we fully support what we create. If you find bugs, we will fix them. We want this to be the premiere multiplayer package available for NWN2, and we intend to support the development community in that.To that end, if you find any issues, please give us a chance to fix them before you vote. Your feedback is appreciated!Try the single player or multi pla...">The Heist at the Neverwinter Lights Casino</a>
-<td>BlackRain Software</td>
-<td>50648</td>
-<td>2014-07-26</td>
-<td>2015-12-05</td>
-<td>10</td>
-<td>English, Hall of Fame</td>
-</tr>
-<tr>
 <td><a href=https://neverwintervault.org/project/nwn2/module/haunting title="Seeking shelter from a blizzard, the PCs must save a village from a vengeful ghost.A short hack-and-slash adventure for 1-4 low level characters.Revision History:v1.3: deactivated non-usable doors in village, enhanced Mina's and innkeeper's conversations, made encounters a little easier, made an endgame check more robustv1.2: increased merchant buy-back limit; replaced some high level loot with more appropriate items.v1.1: fixed merchants; removed some loot from chests in the inn -- instead, a quest NPC gives basic adventurer gear; added more optional dialogue and books to fill out the backstory._____________________________________IGN Vault Download ListingScore: 7.85, 17 votesNameTypeSizeDownloadsThe_Haunting.zipzip7.5Mb1223Module (v1.3) ">The Haunting</a>
 <td>Tony Li</td>
 <td>7832</td>
 <td>2014-08-30</td>
+<td>2014-09-05</td>
+<td>0</td>
+<td>English</td>
+</tr>
+<tr>
+<td><a href=https://neverwintervault.org/project/nwn2/module/halls-hamhock title="This contains the Campaign folder, the updated module file, as well as the ReadMe file, and the files needed for Rogue Dao's Lip Flappers to work.">The Halls of Hamhock</a>
+<td>Dorateen</td>
+<td>27236</td>
+<td>2014-08-21</td>
+<td>2014-09-05</td>
+<td>0</td>
+<td>English</td>
+</tr>
+<tr>
+<td><a href=https://neverwintervault.org/project/nwn2/module/halls-advanced-training-nwn2-alpha-2 title="The full module. Single-Player / Server Hosting. Unpacks to 41.4 MB.">The Halls of Advanced Training NWN2 - Alpha 2</a>
+<td>GreatInca</td>
+<td>7044</td>
+<td>2014-08-10</td>
 <td>2014-09-05</td>
 <td>0</td>
 <td>English</td>
@@ -829,15 +820,6 @@
 <td>17871</td>
 <td>2013-12-14</td>
 <td>2014-08-16</td>
-<td>0</td>
-<td>English</td>
-</tr>
-<tr>
-<td><a href=https://neverwintervault.org/project/nwn2/module/emperors-mercy title="For reasons irrelevant, you have become a convict and slave in the God-Emperor Kathutet's domain. For your skills in combat and spellcraft you have been hand-picked to run his Gauntlet, a maze filled with deadly traps and monsters, created for the emperor's own entertainment. The prize waiting at the end: a full imperial pardon of your crimes. Can you earn your freedom?After playing the original content I was disgusted by how easy it was and its lack of dungeoneering - so what I've tried to provide here is a challenging dungeon in the classic style. This is the first thing I've done with the NWN2 toolset so try not to be too harsh. Also - I know some things are directly stolen, but there was no way I was going to waste hours trying to come up with my own riddles.updated 17/5/08.______________________IGN Vault Download ListingNameTypeSizeDownloadsTEM.rarrar5.5Mb883updated module and readme ">The Emperor's Mercy</a>
-<td>John Citizen</td>
-<td>5725</td>
-<td>2014-09-06</td>
-<td>2014-09-19</td>
 <td>0</td>
 <td>English</td>
 </tr>
@@ -968,6 +950,15 @@
 <td>English, Hall of Fame</td>
 </tr>
 <tr>
+<td><a href=https://neverwintervault.org/project/nwn2/module/basements-basement title="'You are travelling north from the Silver Marches. However, the road to the mountain pass which you need to cross is going to be perilous... To say the least. Can you handle theose perils and continue your journey?'This is my first (completed) module for Neverwinter Nights 2. I've finally decided to design, create, and most importantly, finish a mod. This is the effect.The module is in English, but since it is not my native language expect all kinds of gramatical and syntatic errors. Feel free to contact me with a list of those kind of mistakes. Or with any bugs for that matter. I will, naturally, include your name in the credits below.CREDITSTesting runs:Ula TomczykMilosz Ciesielski_______________________________IGN Archive: nwn2modulesenglish/516Score: 8.19 with 6 votesNameTypeSizeDownloadsThe_Basements_Basement_1.0.mod.zipzip26.4Mb187 ">The Basement's Basement</a>
+<td>Maciej 'Vind' Litwin</td>
+<td>27733</td>
+<td>2014-08-04</td>
+<td>2014-09-05</td>
+<td>0</td>
+<td>English</td>
+</tr>
+<tr>
 <td><a href=https://neverwintervault.org/project/nwn2/module/bards-tale title="KEMO Custom Chairs hak. Needed for the sittable chairs in the Scarlet Bard.">The Bard's Tale</a>
 <td>Vaughn</td>
 <td>627</td>
@@ -1013,15 +1004,6 @@
 <td>English, Hall of Fame, Romance</td>
 </tr>
 <tr>
-<td><a href=https://neverwintervault.org/project/nwn2/module/tales-erithia-truth title="Tales of Erithia is a Module that was created as part of my Interactive Storytelling Class. As such, it is focused on story, dialogue and plot as opposed to hack and slash.It was originally intended for the Dragon Age Editor, however due to college computer problems, we ended up using the NWN2 Toolset, which caused some adaptation issues.This is definitely not done. While the module should be possible to complete, there are several key-features not working yet. For details, please see the readme.txt in the ZIP file.--------------A world ruled by a seemingly benevolent church is turned upside down for the hero when their home is attacked, their family murdered and they only escape with their sister and best friend.Now, they have to find out what the reason for this violent attack was and uncover the mysteries of Erithia's past. Eventually, they will be faced with a choice, a choice that could well change the course of history.Module features:- Branching storyline with currenlt y2(4 plan...">Tales of Erithia - Truth</a>
-<td>NK</td>
-<td>33719</td>
-<td>2014-12-10</td>
-<td>2015-02-23</td>
-<td>0</td>
-<td>English</td>
-</tr>
-<tr>
 <td><a href=https://neverwintervault.org/project/nwn2/module/tales-lake-sorrows title="Lord Tysan of Thunder Bay needs adventurers. Men and women of all classes and backgrounds are invited to present themselves at the town of Littlelake, where they will be taken on on a first come first hired basis.That was what the bard had said when he came into the inn on that wet afternoon late in the summer of 1374. That was the day your adventure started and the day your life changed forever.Location Forgotten realms – in the area of Neverwinter.Setting The module is set at the same time as SoZ against a backdrop of hard times in Neverwinter brought on by the war with the King of Shadows.Play time 25 - 30 hours (plus 6 – 8 hours (see notes))Level 1 - 13Class AnyCompanions 5 but not all at onceTales from The Lake of Sorrows is an adventure for any class which will take your character from level 1 to level 12 – 13 over 25 – 30 hours of gameplay. The story is set on the Lake of Sorrows, a large glacial lake which I have located to the Southwest of Neverwinter. It takes place at the sa...">Tales from the Lake of Sorrows</a>
 <td>PJ156</td>
 <td>1038971</td>
@@ -1040,30 +1022,12 @@
 <td>English</td>
 </tr>
 <tr>
-<td><a href=https://neverwintervault.org/project/nwn2/module/swords-sorcery-nwn2-edition title="DMFI Tools hak (required for play, download if you don't have it already)">Swords & Sorcery: NWN2 Edition</a>
-<td>Carlo</td>
-<td>31232</td>
-<td>2014-09-05</td>
-<td>2018-11-21</td>
-<td>0</td>
-<td>English</td>
-</tr>
-<tr>
 <td><a href=https://neverwintervault.org/project/nwn2/module/swordflight-chapter-one-nwn2 title="This is a port of the highly acclaimed NWN1 module, Swordflight Chapter One by rogueknight333, who has graciously allowed me to do this conversion. I tried to keep it as close as possible to the NWN1 version, but of course, some things needed to be changed in order to fit the NWN2 engine. Many of the scripts are still the same as they still work. I also used the same blueprints, although, they needed to be adjusted a bit for NWN2. All of the areas had to be rebuilt from scratch, but I must say they look pretty good for a noob builder such as me. There is one companion, a bard that will join you near the beginning of the adventure. She is completely controllable. I tested this with a paladin, cleric, ranger, rogue and wizard. Fighter types fared the best in the beginning. Arcane PCs will have a difficult time at the beginning. I’ve added an option at the beginning to give your character some xp to level-up to 2 or 3 if you really need it.  Conversation skills can be very useful, althoug...">Swordflight Chapter One (NWN2)</a>
 <td>travus</td>
 <td>386318</td>
 <td>2025-02-06</td>
 <td>2025-02-07</td>
 <td>5</td>
-<td>English</td>
-</tr>
-<tr>
-<td><a href=https://neverwintervault.org/project/nwn2/module/sunjammers-visual-effects-browser title="Sunjammers_Visual_Effects_Browser_v1.01.zipzip155.25Kb1239">Sunjammer's Visual Effects Browser</a>
-<td>Sunjammer</td>
-<td>159</td>
-<td>2014-08-28</td>
-<td>2020-08-16</td>
-<td>0</td>
 <td>English</td>
 </tr>
 <tr>
@@ -1094,6 +1058,33 @@
 <td>English</td>
 </tr>
 <tr>
+<td><a href=https://neverwintervault.org/project/nwn2/module/star-tethyr title="Star of Tethyr is a freeform sandbox campaign for single or multiplayer in development for the Forgotten Realms Weave. This version is a very small, unpolished version intended mainly as a remote backup and demo for testers and potential collaborators.Demo 2 has a new quest line, new areas, bugfixes and graphical improvements. I really want to know what people think at this stage.Also, I am looking for anyone who can write a great quest or design good areas but doesn't have the time to make a module of their own, to contribute to the project. My dream is that this will oneday be the Oblivion of NWN2, but that would take a very long time working alone.If you are interested or have any feedback, please post of the forum link provided.">Star of Tethyr</a>
+<td>Sethai</td>
+<td>62534</td>
+<td>2017-09-20</td>
+<td>2017-09-20</td>
+<td>0</td>
+<td>English</td>
+</tr>
+<tr>
+<td><a href=https://neverwintervault.org/project/nwn2/module/soz-trade-system-demo-and-documentation title="This is a demo module implementing the Storm of Zehir trade system, as well as documentation for it since I was never able to find documentation of the system. The documentation also shows how to modify the trade system, as shown in the demo module.">SoZ Trade System Demo and Documentation</a>
+<td>Kamal</td>
+<td>4236</td>
+<td>2014-04-20</td>
+<td>2018-04-15</td>
+<td>0</td>
+<td>English</td>
+</tr>
+<tr>
+<td><a href=https://neverwintervault.org/project/nwn2/module/soz-overland-map-demo-and-documentation title="This is a demo module implementing the Storm of Zehir overland map system, as well as more extensive documentation for it than I had been able to find. It also includes the SoZ Trade System demo (which you can find separately at: http://neverwintervault.org/project/nwn2/module/soz-trade-system-demo-an...).">SoZ Overland Map Demo and Documentation</a>
+<td>Kamal</td>
+<td>15868</td>
+<td>2014-04-20</td>
+<td>2018-04-15</td>
+<td>0</td>
+<td>English</td>
+</tr>
+<tr>
 <td><a href=https://neverwintervault.org/project/nwn2/module/soz-holiday-expansion-project title="'Storm of Zehir' is the gift that keeps on giving. To that end, some modders decided, 'Hey, why don't we add more dungeons to it.' Traps were set, schemes schemed, and marriages ruined by calamitous plans for further adventures.You, NWVault community, can now play some* of the fruits of this little project.Includes:Gnome Outpost (The Fred)Halfling Village (Jet Truebow)Graveyard & More (Shaughn78)The Inn of Hidden Tales (kamalpoe)Underground Temple (Dorateen)Ancient Shrine (Brian)Naga Cave & Additions (MikeLM9215)Coiled Cabal Outpost (Wyrin_D'njargo)Darkstrand Maw, Pit of the Eye Tyrant, Creator Den, Cape of the Wise Man (Chaos Wielder)Wow, that's quite a few! The thing is, due to the varied nature of the universe, the level and location variance was nearly perfect. 6 new locations for Samarach and 6 new for the Sword Coast. There's new low level adventures and, yes, even an opponent more powerful than the final boss of SoZ (be ready to die). There's a good amount of content to be playe...">SoZ "Holiday" Expansion Project</a>
 <td>The NWN2 Community</td>
 <td>93232</td>
@@ -1121,6 +1112,15 @@
 <td>English</td>
 </tr>
 <tr>
+<td><a href=https://neverwintervault.org/project/nwn2/module/sheep-and-stone title="Your thirst for adventure has led you to Lakeside, a small town on the lake of sorrows, dedicated, as far as you know, to the passage of quarried stone to Neverwinter and the other big cities of the sword coast.None of the stories you are hearing about this sleepy town justify the need for persons like yourself. However the request from lord Tysan, the local knight was explicit and help is needed here.You are to report to Samuel the town overseer and he will sort out pay and your duties, while you are working for lord Tysan.Despite travelling as a caravan guard to earn some money, you arrive with barely enough to finance yourself having been fleeced by the caravan owner and his men. However the journey was not without event and you do arrive with a little experience under your belt.CampaignThis module is the first in a series on the Vault. The others are:Sheep and StoneThe Caravan ClubThe Last Days of the RavenThese Dark Days of WaitingFrom This Comes StrengthThe series will be six mod...">Sheep and Stone</a>
+<td>PJ156</td>
+<td>117756</td>
+<td>2014-07-18</td>
+<td>2015-12-05</td>
+<td>10</td>
+<td>English, Hall of Fame</td>
+</tr>
+<tr>
 <td><a href=https://neverwintervault.org/project/nwn2/module/shaper-dreams-chapter-4-and-5 title="EXCITING NEWS: After months of work, the translation of Chapter 5 is complete and ready for download here as well! Here, at long last, is Chapter 4 (and now 5) from FFG's Shaper of Dreams. Your party finally reaches the planes, landing in Sigil on their way to the Abyss. Will our heroine find a gateway to the Abyss or will the City of Doors become a Cage for her as it does for so many others?Many years ago I translated chapter 4 for Milena. It did get uploaded briefly to the old vault, but just before it got shut down and somehow did not make the migration, though I believe this chapter is available on NEXUS. So with Milena's permission I am uploading it here. I went through and corrected the (very many) typos I had left behind and the many things (creatures, inventory items, scripted bark strings etc) that got missed the first time. I gave it a single playthrough and caught a few more things. Nonetheless, I am sure there are still typos and untranslated items. So please let me know if...">Shaper of Dreams: Chapter 4 and 5</a>
 <td>Feline Fueled Games</td>
 <td>72339</td>
@@ -1136,15 +1136,6 @@
 <td>2013-10-02</td>
 <td>2015-01-03</td>
 <td>0</td>
-<td>English</td>
-</tr>
-<tr>
-<td><a href=https://neverwintervault.org/project/nwn2/module/shadows-amn-chapter-1-prison-break title="Original Page informationName                   Shadows of Amn - Chapter 1 - Prison BreakAuthor               MoofinSubmitted / Updated   02-01-2011 / 02-03-2011Category               Single PlayerModule Types           Dramatic, Roleplay, Twisted / DarkScope                   Part of SeriesContent               MatureTricksTraps           Dependant on ModuleRoleplay               MediumHackSlash               MediumLevelMin               01LevelMax               05Gameplay Hours       01Patch                   1.23NWN2Game               All Description Shadows of Amn - Chapter 1 - Prison BreakLevel: 1Class: Any (Melee Preferred)Required: Mask of the Betrayer, Storm of Zehir (Built with, may work on the original) Best to start off with a new character or pre-made one at level 1, be too easy otherwise. Installation instructions: Extract the file into MyDocuments/NWN2/modules folder and play! known issues: Custom items don't have icons (inventory icon image) because the toolset crashes w...">Shadows of Amn - Chapter 1 - Prison Break</a>
-<td>Moofin</td>
-<td>5871</td>
-<td>2022-07-30</td>
-<td>2022-07-30</td>
-<td>5</td>
 <td>English</td>
 </tr>
 <tr>
@@ -1229,12 +1220,12 @@
 <td>English</td>
 </tr>
 <tr>
-<td><a href=https://neverwintervault.org/project/nwn2/module/scourge-slavelords-against-giants-merge-patch title="This is a merge patch that combines two outstanding modules by bealzebub: Scourge of the slavelords and Against the Giants. I did this primarily to allow the same companions from Scourge of the Slavelords to be used in Against the Giants. Additionally, many bugs have been fixed.You must have both Scourge of the Slavelords and Against the Giants fully installed. See the links below to download these modules. Before installing this merge patch, DELETE the following files/folder from your NWN2 player directory:Neverwinter Nights 2\Campaigns\scourge_of_the_slavelords (delete this entire folder)Neverwinter Nights 2\Campaigns\Against the Giants (delete this entire folder)Neverwinter Nights 2\modules\a1- slavepits.modNeverwinter Nights 2\modules\a2- slavers stockade.modNeverwinter Nights 2\modules\a3- aerie.modNeverwinter Nights 2\modules\a4- dungeons.modNeverwinter Nights 2\modules\g1_hillgiant.mod Extract this merge patch into your <MyDocs\Neverwinter Nights 2> folder. Start a new game usin...">Scourge of the Slavelords / Against the Giants Merge patch</a>
-<td>travus</td>
-<td>745826</td>
-<td>2023-05-12</td>
-<td>2023-05-12</td>
-<td>5</td>
+<td><a href=https://neverwintervault.org/project/nwn2/module/sea-stars-proof-concept-mod-wip title="Hak (can extract to override as well) for the Storm of Zehir Overland Map UI (frame and buttons). Just put it in your hak directory and attach it to your module.">Sea of Stars Proof of Concept mod (WIP)</a>
+<td>loudent2</td>
+<td>9345</td>
+<td>2014-08-23</td>
+<td>2014-09-05</td>
+<td>0</td>
 <td>English</td>
 </tr>
 <tr>
@@ -1355,7 +1346,7 @@
 <td>English</td>
 </tr>
 <tr>
-<td><a href=https://neverwintervault.org/project/nwn2/module/relaid-sex-single-adventuress-nwn2-authorized-unauthorized-version title="This is an NWN2 adaptation of Lisa's Hall of Fame module of the same name for NWN1. As Lisa said in the read me file for the original, 'This module is meant as immature adult humor only!' The module involves nudity, sex, and violence. Okay ... more sex than violence. If you find nudity or adult content offensive, you should not play this. Please download and take a look at the read me file before downloading everything else. It contains more detailed disclaimers about the content of the module. It also includes installation instructions. The module is designed for a 20th level female PC of one of the following races: human, elf, half-elf, halfling, aasimar, or tiefling. Any character class will be fine. You cannot play it with a male character. You might be able to play it with a female of another race, but I take no responsibility for how silly your character will look during parts of the game ... If you don't have a character meeting that description, a pregenerated character is incl...">Relaid: Sex & the Single Adventuress for NWN2, the Authorized Unauthorized Version</a>
+<td><a href=https://neverwintervault.org/project/nwn2/module/relaid-sex-single-adventuress-nwn2-authorized-unauthorized-version title="This is an NWN2 adaptation of Lisa's Hall of Fame module of the same name for NWN1. As Lisa said in the read me file for the original, 'This module is meant as immature adult humor only!' The module involves nudity, sex, and violence. Okay ... more sex than violence. If you find nudity or adult content offensive, you should not play this. Please download and take a look at the read me file before downloading everything else. It contains more detailed disclaimers about the content of the module. It also includes installation instructions. The module is designed for a 20th level female PC of one of the following races: human, elf, half-elf, halfling, aasimar, or tiefling. Any character class will be fine. You cannot play it with a male character. You might be able to play it with a female of another race, but I take no responsibility for how silly your character will look during parts of the game ... If you don't have a character meeting that description, a pregenerated character is incl...">Relaid: Sex & the Single Adventuress for NWN2, the Authorized Unauthorized </a>
 <td>Original by Lisa, NWN2 conversion by Chimneyfish</td>
 <td>176847</td>
 <td>2014-07-27</td>
@@ -1382,6 +1373,15 @@
 <td>English</td>
 </tr>
 <tr>
+<td><a href=https://neverwintervault.org/project/nwn2/module/reapoxs-pvp-arena title="Reapox_PvP_Arena_v1.zipSubmitted: 11-22-2006 / Last Updated: 11-22-2006zip2Mb1417">Reapox's PvP Arena</a>
+<td>Reapox</td>
+<td>2090</td>
+<td>2014-08-27</td>
+<td>2014-08-27</td>
+<td>0</td>
+<td>English</td>
+</tr>
+<tr>
 <td><a href=https://neverwintervault.org/project/nwn2/module/realities-beyond title="Bilingual mod (English/German)Für die deutsche Version dieser Datei, scrolle nach unten.For the German version of this file, please scroll down.-----------------------------------------------------------------------------Realities beyonda NWN2 mod by diophant-----------------------------------------------------------------------------After careless experiments with ancient magic, you find yourself stranded inanother realm. The way back home is harder than expected, because thisapparent peaceful kingdom is at the edge of a civil war. Also you have tochoose whose side your on...- About 900 hours of development and 65 hours of beta testing.- 3 different but interweaved main plots.- Large sandbox-style world. Feel free to explore wherever you like. At leastuntil someone bashes your head...- No generic NPCs. Each NPC has a different conversation and a different vireof things. Ask them about the recent events and the history of the land.- No generic loot.- New forging and alchemy system.- So...">Realities Beyond</a>
 <td>diophant</td>
 <td>97636</td>
@@ -1398,15 +1398,6 @@
 <td>2015-12-05</td>
 <td>10</td>
 <td>English, Hall of Fame, PnP</td>
-</tr>
-<tr>
-<td><a href=https://neverwintervault.org/project/nwn2/module/raiders-lost-tomes title="Welcome to Raiders of the Lost Tomes!A single-player game for level 1 characters that should bring you up to around level 9-11 (so far).by Darin LaSotaIt has been five long years since the armies of the King of Shadows had forced Lord Nashar to evacuate the great city of Neverwinter, the Jewel of the North, in order to take refuge with the Knight Captain and his forces at Crossroad Keep.It has been four years since the Sesani Merchant Company, under the skillful command of an Adventurer and his Party, overhauled the economy of the Sword Coast, and once again brought the City of Skilled Hands, Neverwinter, economic prosperity.Our story is of two souls, linked by common hardship and joined in adventure; one the Academy Scholarship Wizard and dock-rat Derek Munsford, the other being your character.Derek Munsford is a confused fifth year magic student at The Academy of Neverwinter, trying to survive the year under his strict house-master, the legendary Padras Paleme. He accidently adventur...">Raiders of the Lost Tomes</a>
-<td>Darin L</td>
-<td>69936</td>
-<td>2014-08-04</td>
-<td>2014-09-05</td>
-<td>0</td>
-<td>English, Roleplay, Romance</td>
 </tr>
 <tr>
 <td><a href=https://neverwintervault.org/project/nwn2/module/quester title="Quester is a fully scaled randomly generated adventure system. Select one of 8 different start locations each in of the 8 different modules to start your adventure. Quester has hundreds of base areas and over 80 possible quests.update March 23, 2011 some fixes and limited scaling for random encounters in OverQuestYou do not have to upload all of the modules in order to try this out, but you do need the campaign directory and starting module Chooser.mod from Quester.zip in addition to whichever module you decide to download to try out. Download all of them in order to play the full game.Quester is now in campaign format to take advantage of the party editor feature and so you start in a tiny module called Chooser where you select your starting location. Access to the party editor can be found in the Pubs and Inns.Based on feedback in the forums, I included documentation and debugging tools to help those that want to modify Quester in order to add their own quests. For that purpose ZBOX ...">Quester</a>
@@ -1433,15 +1424,6 @@
 <td>2022-07-30</td>
 <td>2022-07-30</td>
 <td>5</td>
-<td>English</td>
-</tr>
-<tr>
-<td><a href=https://neverwintervault.org/project/nwn2/module/prince-light-or-shadow title="Welcome to 'A Prince of Light, or Shadow,' a Neverwinternights 2 Module designed as a retelling of the fairy tale, 'Snow White and the Seven Dwarves.' In this Module you play as the Prince and you begin by meeting a dwarf named Sullen Sorrowstone while wandering a forest trail. From there, the adventure is yours to discover!Tips & Notes:Module is designed for new, Male melee characters, level 1.You will receive the necessary xp to reach lvl 4 at the beginning of the module, when you accept the Quest.Your dialogue choices are EXTREMELY important. They will determine what options you receive in future conversations.There are TWO DRASTICALLY DIFFERENT ENDINGS. Play through twice to explore both the good and evil paths.Read the Quest Journal updates frequently if you get stuck.Read the COMPLETED QUEST JOURNAL ENTRIES for the complete END STORY.All the module items are UNIQUE. No stock items!Read the description on the BLOODMAIL if you take the evil path for even more back story on the witc...">Prince of Light, or Shadow</a>
-<td>Saorsa</td>
-<td>38232</td>
-<td>2014-09-13</td>
-<td>2014-09-19</td>
-<td>0</td>
 <td>English</td>
 </tr>
 <tr>
@@ -1481,7 +1463,16 @@
 <td>English, Hall of Fame, PnP</td>
 </tr>
 <tr>
-<td><a href=https://neverwintervault.org/project/nwn2/module/planescape-shaper-dreams-unofficial-patch-chapter-6-english-translation title="This is an unofficial patch for the wonderful English version of Planescape SOD by Melina and Feline Fueled Games.This includes a translation of the German chapter 6 version to English! This UOP fixes hundreds of bugs! Companions no longer reset when the leave and rejoin the party. You no longer always have to be in control of the main pc for events to properly execute. Many missing translations are fixed. A complete changelog is in the download!   Installation instructions:You must have the previous English chapters 1-5 installed first (See Required Project links below).DELETE the following old mod files from your modules folder:SoD1.modSoD2.modSoD3.modSoD4.modSoD5.mod Lastly, install this unofficial patch to your <MyDocs/Neverwinter Nights 2> folder. Overwrite any files.Start a new game. A special thankyou to GCoyote for playtesting this uop.">Planescape: Shaper of Dreams - Unofficial Patch with Chapter 6 English translation</a>
+<td><a href=https://neverwintervault.org/project/nwn2/module/planescape-shaper-dreams title="new_walkthrough_installation_chapter2.zipzip2.5Mb2043">Planescape: The Shaper of Dreams</a>
+<td>FFG</td>
+<td>676242</td>
+<td>2014-07-26</td>
+<td>2021-05-06</td>
+<td>15</td>
+<td>English, Hall of Fame</td>
+</tr>
+<tr>
+<td><a href=https://neverwintervault.org/project/nwn2/module/planescape-shaper-dreams-unofficial-patch-chapter-6-english-translation title="This is an unofficial patch for the wonderful English version of Planescape SOD by Melina and Feline Fueled Games.This includes a translation of the German chapter 6 version to English! This UOP fixes hundreds of bugs! Companions no longer reset when the leave and rejoin the party. You no longer always have to be in control of the main pc for events to properly execute. Many missing translations are fixed. A complete changelog is in the download!   Installation instructions:You must have the previous English chapters 1-5 installed first (See Required Project links below).DELETE the following old mod files from your modules folder:SoD1.modSoD2.modSoD3.modSoD4.modSoD5.mod Lastly, install this unofficial patch to your <MyDocs/Neverwinter Nights 2> folder. Overwrite any files.Start a new game. A special thankyou to GCoyote for playtesting this uop.">Planescape: Shaper of Dreams - Unofficial Patch with Chapter 6 English tran</a>
 <td>travus</td>
 <td>354219</td>
 <td>2025-12-30</td>
@@ -1490,13 +1481,13 @@
 <td>English</td>
 </tr>
 <tr>
-<td><a href=https://neverwintervault.org/project/nwn2/module/planescape-purgatorio title="These font files are installed to a different place than everything else. See the enclosed README.">Planescape: Purgatorio</a>
-<td>Rogue Dao Studios</td>
-<td>1051618</td>
-<td>2014-08-31</td>
-<td>2014-09-05</td>
-<td>0</td>
-<td>English</td>
+<td><a href=https://neverwintervault.org/project/nwn2/module/pirate-cards title="Pirate Cards is the latest evolution of the Demon Cards game, a collectable card game suitable for single or multiplayer enjoyment. The Full version includes music, voice acting, and high-resolution card images. The Lite version is suitable for modem users and does not include any music or voice and the card images are lower resolution. The executable is an installer, which places the files in all the different folders. The 1.03 version fixes the issue with overriding a shared file (ingamegui.ini). Run the uninstaller first, which should remove the problem file. The new one uses new GUI scripting that were introduced with the 1.05 NWN2 patch. Files Name Type Size Downloads PirateCards.exe exe 17.8Mb 14873 Pirate Cards - full install (you don't need any other file than this one) PirateCardsLite.exe exe 3.6Mb 1576 Pirate Cards (Lite version) PirateCardsInstaller.zip zip 23Mb 3519 Manual install for people who don't trust installers">Pirate Cards</a>
+<td>Adam Miller</td>
+<td>46552</td>
+<td>2014-07-20</td>
+<td>2015-12-05</td>
+<td>10</td>
+<td>English, Hall of Fame</td>
 </tr>
 <tr>
 <td><a href=https://neverwintervault.org/project/nwn2/module/pilgrim-chapter-1 title="The world is dying. Escape is the only hope we have left.It has been nineteen months since the Great Prophet Imri announced his findings; that the sun's heat, steadily dwindling, would soon ebb beyond all use. That society as we knew it would soon collapse. In the ensuing chaos, a great pilgrimage of travellers, refugees, and citizens departs for the equatorial lands, desperate to reach a warmer climate and claim a few years more of heat and life. Amongst them is an escaped house-slave, recently fled from the great northern nation of Thisk... Starting level: 1-3Description: A mixture of high fantasy, high technology and post-apocalyptica. Heavy focus on character skills and stats to overcome challenges in different ways. Companions & influence included. Crafting: I haven't included a crafting system for now (I'm not sure I've found a way to make it fit the 'everyone is fleeing for their lives' setting) but Craft skills can be used for extra dialogue options and to accomplish quests in ...">Pilgrim: Chapter 1</a>
@@ -1544,15 +1535,6 @@
 <td>English, Hall of Fame, Roleplay</td>
 </tr>
 <tr>
-<td><a href=https://neverwintervault.org/project/nwn2/module/passing-through-lorren title="The full manual outlining the module's creation and introductions to its cast and characters. The last page contains spoilers on how to achieve the eleven different endings. It's my hope you'll play it through once or twice before reading that page ;)">Passing Through Lorren</a>
-<td>ixobelle</td>
-<td>464258</td>
-<td>2014-08-31</td>
-<td>2014-09-05</td>
-<td>0</td>
-<td>English</td>
-</tr>
-<tr>
 <td><a href=https://neverwintervault.org/project/nwn2/module/passage-west title="Five weeks earlier you and your companions awoke in a small damp cave. Not knowing who you were or where you came from and clad in strange armor. Surrounded by strange people with foreign ways. The next month was a blur of attacks and flight into the wilderness. South, always heading south into the mountains. You have arrived at a small trading post at the base of the eastern mountains. Cold, exhausted and starving with the winter snows coming you take a risk and enter the trading post for supplies.Player Race: Moon or Drow Elf(The module won't make sense with any other race)Final1.05 Beta used to finalize.You will need Sorceress Ashura_VFX_Pack_v3.0 for the snow.______________________IGN Vault Download ListingNameTypeSizeDownloadsPassage_West_Readme.rtfrtf6.9Kb1738Passage_West.rarrar53.1Mb2991 ">Passage West</a>
 <td>Blakavare</td>
 <td>55681</td>
@@ -1571,10 +1553,37 @@
 <td>English, PnP</td>
 </tr>
 <tr>
+<td><a href=https://neverwintervault.org/project/nwn2/module/pacsquire title="A Neverwinter Nights 2 Mini-game by AmstradHero aka Shadow BeastPacSquire is a Mini-Game designed primarily for multiplayer to allow people to pit their brains and brawn against their competitors and roaming monsters to see who comes out on top!Run around the playing field avoiding monsters and collecting the 'Coldstones'. Make sure the monsters don't kill you, or else you'll lose one of your three lives. However, you canalso kill your opponents to put them out of the game for 15 seconds!It's a race to see who can collect the most stones, or simply survive!Killing monsters will only make them respawn elsewhere, and beware of being slowed after you pick up a Coldstone!The game can be customised to suit a variety of tastes, including:Adjustable Monster Difficulty - monsters are divided into the following 'bands': 1-4, 5-8, 9-12, 13-16, 17-20, 21-24, 25+.Adjustable monster number - options are: 10, 20, 25, 30, 35, 40, 45, 50.Adjustable stone number - options are: 5, 10, 15, 20, 25, 30, 35...">PacSquire</a>
+<td>AmstradHero</td>
+<td>23760</td>
+<td>2014-09-03</td>
+<td>2014-09-05</td>
+<td>0</td>
+<td>English</td>
+</tr>
+<tr>
 <td><a href=https://neverwintervault.org/project/nwn2/module/once-upon-time title="'Stories are parasitic forms of life, warping lives in the service only of the story itself. As the great sage explained, it takes a special kind of person to fight back...'This is a story about stories, and about expectations...Some are born to be heroes; some are heroes due to circumstances. And yet others are both. Or not.Set in the Forgotten Realms in a small village northwest of Longsaddle, you take on the role of the third-born son (of a farmer) who is destined to succeed.(Heavily) Recommended PC: New level 1 non-evil, Male Human or Half-Elf. Any class, though fighter classes will find this easier.WARNING: NO RESPAWN ON DEATH AVAILABLE. IF YOU DIE, YOU DIE. Save often...Required Hak Pack: Ar Pharazon's cave roof by Ar Pharazon (Released: 03-07-2007)(Also available at The Vault. Builders will also need the erf...Included here as it ends up adding little to the download after compression.Update used: toitv2.hak 04-11-2007)Installation instructions: After unpacking OUaT.rar, put;Onc...">Once Upon a Time...</a>
 <td>Mungo_D</td>
 <td>10127</td>
 <td>2014-09-13</td>
+<td>2014-09-19</td>
+<td>0</td>
+<td>English</td>
+</tr>
+<tr>
+<td><a href=https://neverwintervault.org/project/nwn2/module/ombra-nwn2-chessboard title="Sample .mod to Try Chess Game.ERF and Prefabs file to add to a Custom Module or PW.TXT of Instructions.">Ombra NWN2 Chessboard</a>
+<td>1Ombra1</td>
+<td>2296</td>
+<td>2014-08-14</td>
+<td>2015-06-24</td>
+<td>0</td>
+<td>English</td>
+</tr>
+<tr>
+<td><a href=https://neverwintervault.org/project/nwn2/module/old-meetings title="This is a translation (from french) of my first module for NwN2, uploaded 6 months ago.It is a simple module in which you can do some of the main fights of Baldur's Gate 1(Davaeorn, Zhalimar Cloudwulfe ...). No plot or quests, only battles against NPC. You will find 114 NPC recreated as closed as possible from the original ones ( lvl, stats, hp, spell ...), gathered in 42 different encounters. By your side, you can have 3 of the 25 BG1 companions.How it works :The module is made for a new character (lvl 1). You will get 100 gp at the beginning for your equipment. The encounters are intended to be done in the proposed order as the difficulty is increasing with it.There are 4 areas. In the first one, you will find all the companions, a store (speak with Taerom), and Gorion, with who you can choose an encounter. The encounters are classified in chapters as those of BG1. The 3 other areas contain the enemy you choose to fight with.Gorion : Speak with him to choose an encounter, he will ind...">Old Meetings</a>
+<td>Noon</td>
+<td>6702</td>
+<td>2014-09-09</td>
 <td>2014-09-19</td>
 <td>0</td>
 <td>English</td>
@@ -1616,6 +1625,15 @@
 <td>English</td>
 </tr>
 <tr>
+<td><a href=https://neverwintervault.org/project/nwn2/module/north-moonsea title="The land north of the Moonsea is a treacherous place. With the great plains of the Ride being dominated by Barbarians who kill without warning. The Dragonspine Mountains is home to all manors of foul creatures and bandits that constantly plague travelers of the infamous Northwest Passage. And then there is Melvaunt. A decedent city that is ruled by a mercantile power known as the Council of Lords.Play any character and start at level one. In the starting chest, you will receive Kaldor Silverwands Book of Trumps and can create up to three characters. There is one other companion that is added during the game that is part of the story.Location: The Forgotten RealmsStart Level: 1End Level: 7 or 8Length: 8 to 9 hours (estimated)Thanks to:PJ156 for testing and suggestions.Installation:Place the module files in the My Documents\Neverwinter Nights\Module directoryPlace the North of the Moonsea campaign folder in the My Documents\Neverwinter Nights\Campaign directoryPlace the TLK files in the ...">North of the Moonsea</a>
+<td>Hilltop2012</td>
+<td>294343</td>
+<td>2014-08-04</td>
+<td>2014-09-05</td>
+<td>0</td>
+<td>English</td>
+</tr>
+<tr>
 <td><a href=https://neverwintervault.org/project/nwn2/module/nihil-trilogy-awakening title="(007 Auto-Installer for Windows. Just 'Extract' and 'Use' the 'Nihil_Awakening_Auto_Installer.exe' and it will automatically install the files to your 'Campaigns', 'modules' and 'hak' folders) External Website Beyond Our Control">Nihil Trilogy: Awakening</a>
 <td>seraphimsage</td>
 <td>127388</td>
@@ -1641,15 +1659,6 @@
 <td>2014-09-05</td>
 <td>0</td>
 <td>English</td>
-</tr>
-<tr>
-<td><a href=https://neverwintervault.org/project/nwn2/module/night-walking-dead-dm-version-beta title="All the module and scroll descriptions in one easy place for DMs to print up.">Night of the Walking Dead - DM Version BETA</a>
-<td>MikeLM9215</td>
-<td>27628</td>
-<td>2014-09-03</td>
-<td>2014-09-05</td>
-<td>0</td>
-<td>English, Horror</td>
 </tr>
 <tr>
 <td><a href=https://neverwintervault.org/project/nwn2/module/night-death-prologue title="This is a challenging mod designed for real low leveled characters (preferably lv.1). The mod aims at creating a scenario where using stealth-magic-strength can be used equally. Make a cool lv.1 character and enjoy the ride.This is my first try at a mod, sorry if it is a bit scruffy :) I was thinking about doing a whole campaign to expand on this mod if people like it.___________________________IGN Vault Download ListingNameTypeSizeDownloadsNight_of_Death_Prologue.modmod17.8Mb477 ">Night of Death Prologue</a>
@@ -1688,6 +1697,15 @@
 <td>English</td>
 </tr>
 <tr>
+<td><a href=https://neverwintervault.org/project/nwn2/module/mysteries-westgate title="The following content was generously provided by Ossian Studios with the release of their Neverwinter Nights 2 expansion module, Mysteries of Westgate. It includes a set of creatures, placeables, music, soundsets, plus a mask and a sewer tileset. On the old vault, this was a Hall of Fame entry with a score of 9.11 based on 70 votes.Mysteries of WestgatePlatform: WindowsFormat: Digital Download (disc version available in Poland from CD Projekt and in Russia from Akella)Release Date: April 29, 2009Developer: Ossian Studios Inc.Publisher: AtariCategory: Official ReleaseBasic Story Line:The storyline begins with the player seeking to rid themselves of a cursed object, one that haunts their dreams and threatens their very sanity. After learning from an old sage that the object is inextricably linked to the nefarious organization known as the Night Masks, the player catches the next ship to Westgate in the hopes of uncovering the cure to the curse. Soon afterwards, the player is drawn into a...">Mysteries of Westgate</a>
+<td>Ossian Studios Inc.</td>
+<td>80489</td>
+<td>2014-07-14</td>
+<td>2016-04-02</td>
+<td>10</td>
+<td>English, Hall of Fame</td>
+</tr>
+<tr>
 <td><a href=https://neverwintervault.org/project/nwn2/module/murder-dunlop title="Having left your parents house some days ago, you where not thrilled at the idea of spending the rest of your life being a farmer. That and you had about just enough of your mother's nagging and father's controlling ways. You decided it was about time to go out in the world and try your luck at making your fortune.Up the dirt road ahead, you see a group of slightly run down huts and small buildings. You pass an old rickety sign that reads Dunlop, you wonder to yourself if this might be the place to make your fortune or at lease find something to eat. You are cold, tired and STARVING!Murder in Dunlop is a single player game for 1st level characters. It’s the story of a young adventurer who has set off to make his fortune. While doing some local quest being the hero of the day and trying to make a little gold on the side. Are hero starts to uncover some letters that point of something for more menacing happening. When a good friend becomes the victim of this evil plot, the quest is on!WA...">Murder in Dunlop</a>
 <td>alupinu</td>
 <td>44375</td>
@@ -1704,6 +1722,15 @@
 <td>2016-04-02</td>
 <td>10</td>
 <td>English, Hall of Fame</td>
+</tr>
+<tr>
+<td><a href=https://neverwintervault.org/project/nwn2/module/module-event-tagged-module-v101 title="The goal of this module is to give module developers a clean module with the events already registered so that community content will work without any changes needed. This is a starter module that only has the module events set and includes the scripts for those events.A module does not have a script associated with every event when you create one from scratch. This causes problems for community content that adds new functionality dependent on these events.I've also included the scripts as a separate ERF file for existing modules.There are now two versions: The existing Event Scripted Module that hooks up every event for community override and a Basic Event Scripted Module that only has the critical scripts hooked up (and the existing default scripts for the rest).The 5 critical events are:On PC LoadedOn Player Equip ItemOn Player Unequip ItemOn Player RestOn Player Level UpModule Event DescriptionsOn Acquire Item Script - This event is fired each time an item is added to an objects in...">Module Event Tagged Module v1.01</a>
+<td>Kaedrin</td>
+<td>10</td>
+<td>2014-07-20</td>
+<td>2014-09-19</td>
+<td>0</td>
+<td>English</td>
 </tr>
 <tr>
 <td><a href=https://neverwintervault.org/project/nwn2/module/mithdradates-hall-training title="Zipped directory containing module file, hak file and read me file for the 2.3 version. This version has been updated to work with MoTB.">Mithdradates' Hall of Training</a>
@@ -1742,13 +1769,13 @@
 <td>English</td>
 </tr>
 <tr>
-<td><a href=https://neverwintervault.org/project/nwn2/module/mantas-pulse title="A mysterious stranger arrives in Dantris Town, nestled at the heart of a lush mountain valley. Moving with the sole purpose of acquiring an elusive relic, the stranger agrees to investigate a string of disappearances in exchange for the artifact. When the mission ventures into the heart of an ancient hidden fortress, it soon becomes clear that there is much more to this quiet valley than meets the eye. Quick wits and a competent blade will be needed to keep the would-be hero from joining the list of the vanished.Manta's Pulse is a single-player adventure for Neverwinter Nights 2. No expansion packs are needed to play the module.NOTE: It is recommended that you bring in a level 1 character, as PC's higher than level 1 will be automatically set to 1, with the default package for his/her class. Items and gear cannot be brought in.LegacyOn the old IGN Vault, this module scored 8.19 out of a possible 10, based on 10 votes received.">Manta's Pulse</a>
-<td>Syrinthaul</td>
-<td>80470</td>
-<td>2014-07-30</td>
-<td>2014-08-02</td>
+<td><a href=https://neverwintervault.org/project/nwn2/module/merfolk-vs-sahuagin title="MERFOLK VERSUS SAHUAGINby MikeLM9215The Sahuagin have moved into Mermen territory and the two forces are fighting for control of the area. Side with the Mermen and kill the Sahuagin Baron or side with the Sahuagin and kill the Merman Prince. Good and Evil characters have no choice who they help. Neutral characters do.Best meant for single characters 5th-8th level, though a party of 1st-5th level characters should also do well. Barbarians and magic-users without summoned creatures will die a lot. Luckily there is no penalty. The final reward is a class-specific magic item 4 levels above your own. This is a hack and slash with renewable encounters.v1.01 Door transition fixed.v1.02 Creature hit points fixed.v1.03 Tile errors fixed.v1.04 Mermaid fixed.v1.05 Fixed encounters.">Merfolk vs Sahuagin</a>
+<td>MikeLM9215</td>
+<td>29501</td>
+<td>2016-04-16</td>
+<td>2016-04-25</td>
 <td>0</td>
-<td>English</td>
+<td>English, Hack & Slash, Multiplayer</td>
 </tr>
 <tr>
 <td><a href=https://neverwintervault.org/project/nwn2/module/lute-hero title="Lute Hero is stand-alone teaser module for the upcoming final act of Dark Waters. You can practice your playing in Death's Domain, or venture across the afterlives to do battle with your mighty lute.You can view a preview of Lute Hero here.LegacyOn the old IGN Vault, this was a Hall of Fame winner with a score of 9.92 out of a possible 10, based on 71 votes. There were 8,489 downloads.">Lute Hero</a>
@@ -1805,15 +1832,6 @@
 <td>English</td>
 </tr>
 <tr>
-<td><a href=https://neverwintervault.org/project/nwn2/module/les-crocs-de-kard%C3%A9nie title="Dungeonistes francophones! Soyez dans la joie, aujourd’hui on pense à vous très fort.Découvrez un nouveau projet, réalisé entièrement pour l’aventure solo: Les crocs de Kardénie Une écriture soignée, des choix roleplay et un système de réputations qualitatives (par dessus le vieil alignement classique).Trois chapitres, au moins 20h de jeu. Au moins.L'aventure s'adapte au maximum de choix possibles (mais si vous faites un guerrier gnome axé sagesse, vous assumez).Une aventure difficile. Eeeeeeh oui. M'enfin il est toujours possible de ranger son amour propre et de baisser la difficulté globale du jeu.Garantie SANS Seigneur Noir des Ténèbres qui est en fait ton père/frère/oncle/cousin par alliance, SANS gentils elfes des bois (ou alors si, mais ils sont petits, laids et cannibales) et SANS mentor-mystérieux-qui-décède-au-début (il décède à la fin).Par contre il y a des esclavagistes, des orques en quantité, des tortionnaires, des violeurs et des prostituées, parfois le tout en un seul et...">Les crocs de Kardénie</a>
-<td>Macastril</td>
-<td>693529</td>
-<td>2015-12-20</td>
-<td>2021-12-04</td>
-<td>5</td>
-<td>French</td>
-</tr>
-<tr>
 <td><a href=https://neverwintervault.org/project/nwn2/module/legends-verssavis-athenas-gambit-chapter-one title="  Legends of Verssavis--Athena's Gambit--Chapter OneV.2.00 By Maxime Benoit Above Darlsum, the city of the Dark Elves on the plane of Verssavis, a terrible crisis looms, prompting Athena, its patron Deity, to make her first move to undo an unknown foe! This is where you, an islander (Or so you say.), make your entrance as you get hired by the self-styled 'Spy-Master', madam Bovar, who is attempting to find remedy to the city's precarious situation... Will you be the republic's new hope? This campaign is designed for a new character of any class, any alignment and any race. Races afflicted with the feat 'Daylight Blindness' (Gray Orcs, Gray Dwarves and Dark Elves.) will receive, after this campaign's intro, the feat 'Daylight Adaptation' for free. The main character's alignment will change many dialogue options and the outcomes of many quest. Also, at the beginning of this campaign, you will be given a permanent companion and you will be able to determine wetter she will be a barbarian,...">Legends of Verssavis--Athena's Gambit--Chapter One</a>
 <td>Maxime Benoit</td>
 <td>33323</td>
@@ -1868,15 +1886,6 @@
 <td>English, Multiplayer</td>
 </tr>
 <tr>
-<td><a href=https://neverwintervault.org/project/nwn2/module/last-danaan-unofficial-patch title="The Dana'an modules by J.E. McKellar are my favorite entries on the Vault. They combine less well known Celtic mythology and folklore, epic poetry, American colonial history, politics, economics, and an appreciation for the chaos and logistical difficulties of actual warfare with good storytelling.  Inspired by Travus’ series of Unofficial Patches, I decided to fix the known bugs, mistakes, and one or two irritants in these classic Ranger adventures. Travus made this possible by fixing the scripts that too often failed during the large battles that are the hallmark of this mod. I fixed the conversations, item blueprints, and loot drops. All his fixes have been tested by three different players so if anything is broken, it's my fault. I've added a couple of non-plot items that may make life a little easier but they can be ignored.I have not changed the plot in any way. I have not changed any of the NPCs or creatures.In-game time has been slowed from two minutes/game hour to three minute...">Last of the Dana'an - Unofficial Patch</a>
-<td>GCoyote</td>
-<td>158793</td>
-<td>2022-03-11</td>
-<td>2025-10-06</td>
-<td>5</td>
-<td>English</td>
-</tr>
-<tr>
 <td><a href=https://neverwintervault.org/project/nwn2/module/lanterna title="***Now includes a Multiplayer version (you can play the MP version in either Multi or Single Player modes)*** 'Approximately 60 years have passed since The Great Battle of Charnia (see 'The Exile'). After that battle, the creatures and followers of Zorn continued to grow in numbers and eventually run the Charnians from their homes. The Charnians escaped into the forest and eventually crossed through a great mountain range via the mountain dwarves passage. On the other side of the mountain they began to build a small town with a few outlining villages. The followers of Zorn eventually stopped hunting the Charnians and returned to their lands. They began to lose focus (since there was no one to torment) and eventually separated into different clans and tribes based on race (goblins, orcs, ogres, dark dwarves, zornians, etc.) About 10 years ago your (the PC’s) father, Adwen, led a large group of Charnians in an attempt to return to Charnia. Since the attacks had pretty much ended, they fe...">Lanterna</a>
 <td>slowdive</td>
 <td>93774</td>
@@ -1895,6 +1904,15 @@
 <td>English</td>
 </tr>
 <tr>
+<td><a href=https://neverwintervault.org/project/nwn2/module/koh-witches-plague-alpha title="I finally have connected all area's together, so this time you can walk through the entire module .There are some issues1. Labyrinth, temple, Amanii house bedrooms, Mill , Sisterhood of Weberkar house and some other interior's are not done yet and so are not included i this module. Most of them (except the sisterhood) make their way into ACT II of the module anyway, and so have no priority yet.2. You can find the herb shop in the ' Upper District' Near the fountain with benches opposite to the castle, the door is also opposite to where the sisterhood house it . (at the edge of the cliff t the harbor)3. Gama's speech should be corrected.. he now say's you forget quickly.. but he's supposed to say that the second time only! not the first ..Also the story he is telling should have 4 camera angles .2 of them view the statue's he's standing by .1 of the giant statue of General Matheus (taken from the ground)And his normal camera which views himself as he tell's the story .If anyone wants to...">KOH: Witches of the Plague (Alpha)</a>
+<td>Razoorsharp (Attic Evolved)</td>
+<td>39503</td>
+<td>2014-09-09</td>
+<td>2014-09-19</td>
+<td>0</td>
+<td>English</td>
+</tr>
+<tr>
 <td><a href=https://neverwintervault.org/project/nwn2/module/king-day-cp-i-summer title=".. fool for a lifetime. Big Spoiler and walktrough, do not read if you haven't play the module, can change your gaming experience.">King for a Day - Cp I: Summer</a>
 <td>Qkrch and Cielososcuros</td>
 <td>120687</td>
@@ -1904,13 +1922,13 @@
 <td>English</td>
 </tr>
 <tr>
-<td><a href=https://neverwintervault.org/project/nwn2/module/jodans-tower-defense title="Jodan's Tower Defense v1.0 - Single+Multiplayer Module for up to 6 players. The number of creatures per wave depends on the number of players. Description: Horrible creatures are on the way to get some of the delicous flesh of farmer Jenkins's cows. Prevent them from reaching the meadow by building towers and using specials wisely.This is one of the games from my next module 'Heroes, gods and taxes' (I am currently developing it in german. Name: 'Von Göttern, Helden und Steuereintreibern.' When it's done i will translate it.Done when it's done ;) )Not yet tested with 6 players, so i don't know if it's really playable. In an old version we have tested it with 4 players and it worked properly.Of course i would like to hear your opinions, cutups,...Have fun!_________________________________________IGN Vault Download ListingNameTypeSizeDownloadstower_defense.RARRAR3.3Mb999Module and Gui FilesInstallation.txttxt0.29b765Installation Guide ">Jodan's Tower Defense</a>
-<td>Jodan</td>
-<td>3476</td>
-<td>2014-08-13</td>
-<td>2014-09-05</td>
-<td>0</td>
-<td>English</td>
+<td><a href=https://neverwintervault.org/project/nwn2/module/jegs-training-module title="This module is designed to be a simple and quick way to test builds. All of the merchants are in a single room, this is by design to limit walking distance with an attached danger room. The rooms are very bare to reduce load times and system drain as this was originally designed for a friend who has low systems spec, heck they are running this on a Geforce 5500 card which is not officially supported because it is so slow. The latest version of this mod will always be located at 'nwvault.ign.com' Module features: Gold Giver, XP Gain, Merchants who sell all items in the game including limited edition and pre-order items, melee and ranged weapon, armor, jewelry smith to add properties to items, alignment shifter, and workbenches for crafting. Ability to add or remove any feat that the game supports to your character. For testing of characters it offers a danger room where you can summon monsters to fight against to test out your builds. Monsters summoned are based off your level or of a s...">JEGs Training module</a>
+<td>WhatIsSol</td>
+<td>4658</td>
+<td>2014-07-20</td>
+<td>2015-12-05</td>
+<td>10</td>
+<td>English, Hall of Fame</td>
 </tr>
 <tr>
 <td><a href=https://neverwintervault.org/project/nwn2/module/isle-shrines title="South of the Moonshae island of Gwynneth is a forgotten isle, where all that remains of a once thriving dwarven community are the shrines they built to their gods. For centuries no outsider has successfully made landfall and left the isle alive. Are you the exception, or will the isle claim yet another victim? ============================================================Installation:  Copy the MOD file to 'Documents\Neverwinter Nights 2\modules' Copy the HAK files (6) to 'Documents\Neverwinter Nights 2\hak' Copy the TLK file to 'Documents\Neverwinter Nights 2\tlk' Requires Mask of the Betrayor & Storm of Zehir============================================================Good, neutral and evil characters follow three different (but intertwining) plot paths. Each plot is mostly linear (with optional side quests), and allows access to areas or resources denied to the other plot paths.You can only rest beside lit campfires or braziers. Campfires require wood, while braziers require an equippe...">Isle of Shrines</a>
@@ -1940,6 +1958,15 @@
 <td>English, Hall of Fame</td>
 </tr>
 <tr>
+<td><a href=https://neverwintervault.org/project/nwn2/module/hyborian-hack title="The evil wizard Gurgal Sang of Shadizar has tricked you into meeting him and, as punishment for some real or imagined slight against his god Set, has thrown you – or at least the essence of your being – into a massive, perhaps infinite, dungeon called the Maze. The Maze occupies a space between worlds, and consists of small isolated demi-planes connected by magical portals. You may try and hide in the dungeon, languishing until your life runs its natural course, die in a blaze of glory fighting all the other trapped individuals and monsters within the Maze or dare to hope for escape.Game PlayThis module, sometimes known by its author as 'Highly Boring Hack', is a 'hack and slash' random dungeon set in the world of Conan the Barbarian. Nay, to say hack and slash is going too far. This module is for hackers only. Slashers need not apply. And those who want 'story', linear or otherwise, can forget it entirely!The module caters for any party, from a single 1st level PC to a party of 30th l...">Hyborian Hack</a>
+<td>John McA</td>
+<td>403970</td>
+<td>2014-07-29</td>
+<td>2014-07-30</td>
+<td>0</td>
+<td>English, Hack & Slash, Multiplayer</td>
+</tr>
+<tr>
 <td><a href=https://neverwintervault.org/project/nwn2/module/hunt-wumpus title="WARNING! This is a puzzle minigame! So no XP, no loot, no roleplaying, and (almost) no killing!Hunt the Wumpus is a puzzle game originally invented by Gregory Yob in 1972. You must navigate through a maze of twenty interconnected rooms and locate the evil Wumpus without entering the Wumpus' room. In each room, you get hints about the adjacent rooms. Once you have located the Wumpus, you can kill him from an adjacent room with your magic javelin. Further hazards of the maze are humungonous bats and a bottomless pit.The room of the Wumpus, the bats and the pit are randomized when you start the game.For deatiled rules, read the Book of the Wumpus, which you find in the chest in the first room.I implemented this game as a hidden minigame in my module Realities Beyond. However, it is so well hidden that probably nobody will find it. Thus, I decided to release it as a standalone module.-------------------------ACHTUNG! Dies ist ein Puzzle-Minispiel! Also keine Erfahrungspunkte, keine Beute, ...">Hunt the Wumpus</a>
 <td>diophant</td>
 <td>1682</td>
@@ -1947,15 +1974,6 @@
 <td>2014-04-09</td>
 <td>0</td>
 <td>English German</td>
-</tr>
-<tr>
-<td><a href=https://neverwintervault.org/project/nwn2/module/humble-beginnings title="Humble Beginnings is a mini-module (@ 10 minutes) designed for a new character.I made this module partly to release something that is actually done and playable. It's just a short little encounter you can play as an initial adventure for a new character. It's not much, but I think it should be good to kill a few minutes and give a chuckle or two.There is little or no combat, so character class is not an issue, though there is one part where rogues have an advantage. The dialogue, such as it is, includes options for good and not-so-good characters, though they will not affect your alignment.Note to mod builders: feel free to incorporate this mini-mod into your own projects as an encounter, etc. If you use it, please give me credit.Installation: Just unzip the .mod file into your C:\User\Documents\Neverwiner Nights 2\modules folder.Updated 10/21/11: Resolved character export issue that some players were having. Character should now export one PC convo node before the mod end.Updated 3/3/...">Humble Beginnings</a>
-<td>Jezla9</td>
-<td>1323</td>
-<td>2014-06-29</td>
-<td>2014-08-10</td>
-<td>0</td>
-<td>English</td>
 </tr>
 <tr>
 <td><a href=https://neverwintervault.org/project/nwn2/module/howls-dark title="2009-04-13 fire&ice 6.79 Interesting companion-driven storyline 				Good use of scripted encounters 				Exciting combat Lack of choices for the player 				Buggy side quests">Howls in the Dark</a>
@@ -1985,6 +2003,15 @@
 <td>English</td>
 </tr>
 <tr>
+<td><a href=https://neverwintervault.org/project/nwn2/module/hearts-endia title="2009-06-05VPJ6.43Excellent area design and atmosphereLinear story; limited roleplay choices">Hearts of Endia</a>
+<td>Mazena</td>
+<td>145949</td>
+<td>2014-08-10</td>
+<td>2015-12-05</td>
+<td>10</td>
+<td>English, Hall of Fame</td>
+</tr>
+<tr>
 <td><a href=https://neverwintervault.org/project/nwn2/module/haunted-halls-eveningstar title="Welcome to the picturesque village of Eveningstar, nestled at the foot of the Stonelands where the River Starwater winds down a gorge and snakes into the King's Forest. Here, the Knights of Myth Drannor began their famous adventures. Here, the Ladies of the Brazen Blade, The Company of the Singing Sword, The Steel Shield Band, and many others came, clutching royal charters from King Azoun with the ink scarcely dry on the parchment. Some fell, some went on to greatness - but they all came here first: here, to the Haunted Halls. Despite numerous infiltrations, the Halls have not yet yielded all their secrets or treasures. Many dangers lurk as deadly as ever in dark chambers herein, awaiting new companies of eager-eyed adventurers. Is it your turn to dare The Haunted Halls? Many come, but few survive to again see Eveningstar's beauty. Welcome, then. Enter in, and find in this Campaign:9 complete quests (updates will bring more)Play Lute hero to make money and influence the townsfolkCrafti...">Haunted Halls of Eveningstar</a>
 <td>Darin</td>
 <td>409468</td>
@@ -2012,15 +2039,6 @@
 <td>English, Hall of Fame</td>
 </tr>
 <tr>
-<td><a href=https://neverwintervault.org/project/nwn2/module/haptooth-tower-nwn2 title="Someone has gone back to the Tower of Dracandros and not returned. You have been asked to check out what is going on. Is it spirits, balled lightning, or something else entirely.Meant for a party of 1st-4th level characters, two people of 2nd-4th level, or one person of 3rd-5th level.Requires NWN2, MOTB and SOZ version 1.23.">Haptooth Tower NWN2</a>
-<td>GoldBoxFan</td>
-<td>5029</td>
-<td>2017-09-20</td>
-<td>2017-09-20</td>
-<td>0</td>
-<td>English</td>
-</tr>
-<tr>
 <td><a href=https://neverwintervault.org/project/nwn2/module/happily-never-after title="Fairy stories and myths gain their power from the trans-generational influence they have upon people, providing symbols and realities which are collectively drawn in the Reality Beyond. For this reason, an entity from Beyond may make use of these stories to weaken the Veil, the barrier between reality and dream.How you have come to be browsing the dusty shelves of the sprawling library--or why--is up to you. But you will be drawn into the influence of an entity from Beyond trying to gain access to Loam through a certain book, and you can stand with the characters in the book to get the story back on track and bring a happy ending.This module is a somewhat silly adventure designed for characters of third level which references several of Grimm's Fairy Tales (including 'Snow White,' 'Sleeping Beauty,' 'Cinderella,' and 'The Bremen Musicians') as well as alluding to other folk and fairy stories in a similar vein.______________________IGN Vault Download ListingNameTypeSizeDownloadsHNA_Read...">Happily Never After</a>
 <td>Allyndn_The_Beggar</td>
 <td>21597</td>
@@ -2035,6 +2053,15 @@
 <td>16227</td>
 <td>2014-09-14</td>
 <td>2014-09-19</td>
+<td>0</td>
+<td>English</td>
+</tr>
+<tr>
+<td><a href=https://neverwintervault.org/project/nwn2/module/halls-beast-tamers title="NWN2 v1.03. Fix respawn to wake you up in throne room, change placeable water with 3D water, change opening conversation to opening of store only. Some secret doors work differently now.">Halls of the Beast Tamers</a>
+<td>MikeLM9215</td>
+<td>7184</td>
+<td>2014-09-05</td>
+<td>2014-09-05</td>
 <td>0</td>
 <td>English</td>
 </tr>
@@ -2075,15 +2102,6 @@
 <td>English, Hall of Fame</td>
 </tr>
 <tr>
-<td><a href=https://neverwintervault.org/project/nwn2/module/gold-and-ebony-temple-time title="[Version 003] - Includes a new puzzle among other minor changes. External Website Beyond Our Control">Gold and Ebony - Temple of Time</a>
-<td>seraphimsage1</td>
-<td>12690</td>
-<td>2014-08-05</td>
-<td>2014-09-05</td>
-<td>0</td>
-<td>English, Horror</td>
-</tr>
-<tr>
 <td><a href=https://neverwintervault.org/project/nwn2/module/goblin-bandits-delimbiyr-route title="'125 gold for the annihilation of wicked goblin briggands!' These words of the Daggerford village crier have brought you to Fair Harvest inn, located along the Delimbiyr Route about 10 miles south of Ardeep Forest. The reward is being offered by the innkeeper Edward Rollins. INSTALLATION: Download all three parts, place them in one folder, and unzip any one of them with the RAR compression tool of choice. You should get one 'Goblin Bandits of the Delimbiyr Route v113.mod' file. Copy the .mod file to the 'My Documents\Neverwinter Nights 2\modules'. Start the game and select 'New Module' then 'Goblin Bandits of the Delimbiyr Route v113'.  NOTES:  Intended to be a Wilderness adventure. 3 potential companions provided (Fighter, Sorcerer, and Cleric) The number of traps make a character with Search/Spot useful (Disable Device is not too helpful since most traps spring on you at level 1). The module is designed for a single player or single party multiplayer. The module was created and teste...">Goblin Bandits of the Delimbiyr Route</a>
 <td>Kevin Carr</td>
 <td>61075</td>
@@ -2091,15 +2109,6 @@
 <td>2015-12-05</td>
 <td>10</td>
 <td>English, Hall of Fame</td>
-</tr>
-<tr>
-<td><a href=https://neverwintervault.org/project/nwn2/module/gauntlet title="Original Page informationName                   GauntletAuthor               Mitchell McKainSubmitted / Updated   07-02-2007 / 07-10-2007Category               Single Player OR Multiplayer (1-4 Players)Module Types           Combat, Dungeon Adventure, Forest Adventure, Mountain AdventureScope                   LargeContent               EveryoneTricksTraps           LightRoleplay               NonexistentHackSlash               HeavyLevelMin               01LevelMax               10Gameplay Hours       15Categories           Hack 'n Slash, Dungeon CrawlPatch                   1.06 Description As the name implies this is a campaign to train your characters and have fun in the process. It is combat rather than story oriented and you have to figure things out for yourself. There are labyrinth like areas (a little different each time you play) that you may need to map out to find your way through them. Resting is always allowed but different rest locations give different advantages or pena...">Gauntlet</a>
-<td>Mitchell McKain</td>
-<td>211291</td>
-<td>2022-07-30</td>
-<td>2022-07-30</td>
-<td>5</td>
-<td>English</td>
 </tr>
 <tr>
 <td><a href=https://neverwintervault.org/project/nwn2/module/g1-steading-hill-giant-chief-dms-only title="Giant have been raiding the lands of men in large bands, with giants of different sorts in these marauding groups. Death and destruction have been laid heavily upon every place these monsters have visited. This has caused great anger in high places, for life and property loss means failure of the vows of noble rulers to protect the life and goods of each and every subject - and possible lean times for the rulers as well as the ruled. Therefore, a party of the bravest and most powerful adventurers has been assembled and given the charge to punish the miscreant giants.V1.01 Remove 2 doubled secret doors._______________________________IGN Vault Download ListingNameTypeSizeDownloadsG1__Steading_of_the_Hill_Giant_Chief_DM_Version.7z7z8.9Mb618DM version of the module in 7 Zip form. No MOTB version as yet. Requires DMFI hakpack. V1.01 Remove 2 doubled secret doors.View.php?view=NWN2Scripts.Detail&id=38Deta--841DMFI hakpack. Either package will work.G1__SOTHGC_DM_Notes.rtfrtf20.48Kb540DM Notes...">G1 Steading of the Hill Giant Chief - for DM's Only</a>
@@ -2127,6 +2136,24 @@
 <td>2015-12-05</td>
 <td>15</td>
 <td>Hall of Fame, Roleplay</td>
+</tr>
+<tr>
+<td><a href=https://neverwintervault.org/project/nwn2/module/dusk-till-dawn title="This game was never finished, but i was playing Die2Nite (a now unsupported zombie flash game) and got inspiration to do something similar in nwn2. The basic mechanics are in place, its just the story that wasn't finished. The game is designed for a level 1 fighter. Even if i had finished the story (which i still might if its at all popular), its a roguelike game. Its not about finishing it so much as how far do you get before you die. Posting it here so i can link it to a friend, but others might enjoy the concept. Basically, its a zombie game in the style of die2nite. You go out into 'the world' to scavenge for iron and wood you can use to upgrade your settlement. Don't go out at night, bad things happen. Eventually, you'll be able to find out why, but that doesn't change things. The story was basically to find out what had happened and why, but it was irrelevant to the larger game. Will update further if it seems interesting, but its no epic saga like lotr. Search for settlements to...">From Dusk till Dawn</a>
+<td>Torga_DW</td>
+<td>92851</td>
+<td>2022-02-18</td>
+<td>2022-02-18</td>
+<td>5</td>
+<td>English</td>
+</tr>
+<tr>
+<td><a href=https://neverwintervault.org/project/nwn2/module/festival-dead title="The Tradeway is a well traveled route along the west coast of Faerun. It stretches from Waterdeep in the north all the way to Calimport in the south. You are accompanying three Bards to Dragon Spear Castle for an audition with the King. Your companions have decided to camp close to the Misty Forest in hopes of finding game, since your supplies are running low. Thus far, your trip from Daggersford has been uneventful.This is a short adventure , 1 to 2 hours, for level 1 players. You will create your own party with the SOZ editor.Special Thanks to PJ156 for testing and suggestions.Prefabs that were used from the Vault:Forgotten Village by HosaPeasant Interiors by RylockOther things used:Deck of Trumps by Kaldor Silverwand-------------------------------Install:Place the fotd_mod_01.mod file in your My Documents\Neverwinter Nights2\Module directoryPlace the Festival of the Dead Campaign Folder in your My Documents\Campaign directory.Run as Campaign.-------------------------------Also thank...">Festival of the Dead</a>
+<td>Hilltop2012</td>
+<td>24682</td>
+<td>2014-08-30</td>
+<td>2014-09-05</td>
+<td>0</td>
+<td>English</td>
 </tr>
 <tr>
 <td><a href=https://neverwintervault.org/project/nwn2/module/fate-city title="Determine your destiny, and shape the Fate of a City.In the foothills of the Thunderpeak Mountains, on a trade route in the borderlands between Sembia and Cormyr, lies the rural city of Darthall. This former cleric stronghold developed into a small outpost of society in a harsh environment, but sometimes, the most sinister and dangerous adventures occur within those walls, not beyond them.You are a member of the City Watch by circumstance, and ever since you arrived Darthall has appeared a place where intrigue lies just beneath the surface. Yet those tensions stand ready to burst forth at any moment, and the faint rumours of trouble stirring on the city's outskirts may prove even troublesome, for word has reached Darthall of an army marching forth on its gates even now...Will you seek power, fame, glory or riches? Choose your enemies carefully, and your friends even more wisely, for danger and betrayal might lurk around any corner as you shape the Fate of a City.DescriptionFate of a Ci...">Fate of a City</a>
@@ -2192,15 +2219,6 @@
 <td>English</td>
 </tr>
 <tr>
-<td><a href=https://neverwintervault.org/project/nwn2/module/endless-depths title="Endless Depths continues the Endless Nights series in NWN2. It is a rogue-like in the truest sense. The bulk of the module is made up of a random dungeon that is generated from scratch. Endless Depths features random monsters, random camps within the dungeon, dynamic magic items, and a companion system that allows players to register their own characters as companions. Game play length is about 60 hours.On the old Vault, this was a Hall of Fame module with a score of 7.95 out of a possible 10, based on 32 votes. There were 11,817 downloads of the module.">Endless Depths</a>
-<td>Havlen</td>
-<td>19691</td>
-<td>2014-07-17</td>
-<td>2015-12-05</td>
-<td>10</td>
-<td>English, Hall of Fame</td>
-</tr>
-<tr>
 <td><a href=https://neverwintervault.org/project/nwn2/module/end-legends-kingdom-algard title="Once a legendary hero which defeated the Lord of Shadows, King Elehnrik of Algard has died of illness a few days ago. There are now dispute around the not less legendary Statue of Eliosis, that the king has promised to hand back to the Holy City...You are a famous adventurer passing by in the kingdom of Algard in those time of changes, and Don Jarlus, leader of the trading guild, has called you to the king's castle for a special mission...Single player only. Designed for level 10-12 characterNote that several fights are hard if you start level 10. Most of them are ok if you start with level 12 or higher.If you really don't like challenging fight, feel free to start with higher level character, like lvl 18 or 20 (companions will adjust to your level).Final battle definitely needs a bit of strategy and observation, and will probably need several tries to be done.Revisions:Version 1.1:Fix a bug that was preventing reloading a save during final battleAdd some +3 ammo (arrows, bolts, bullet...">End of Legends in Kingdom of Algard</a>
 <td>Phybrizo</td>
 <td>353669</td>
@@ -2246,6 +2264,15 @@
 <td>English</td>
 </tr>
 <tr>
+<td><a href=https://neverwintervault.org/project/nwn2/module/dragonkin-appearance-changer title="This example module is a functioning module showing how you can add the dragonkin as a playable race to your PW.Credits!Thanks to the creators of Leto script for NWN1.Thanks to VirusMan for giving us a functioning leto script system for NWN2. LinkThanks to PNJ for giving me an example module with scripts so I could get this working.Thanks to Ilrilan for giving us the Alternative nwnx4 hook so that we can use old systems like the leto script from NWN1. LinkThanks to Camb and Zarvhak for their work on the dragonkin hak pack. I wouldn't have been motivated to do any of this had it not existed! LinkPlease please! If I've used your content in someway and not given you credit or credit to the wrong person please let me know!**To begin I consider this beta, I still have some player friendly menu options that need to be added. Like a 'all done' option so the menu can be exited. There are also some color setting bugs for the under body *ie* selecting light brown comes out as purple.**Instructio...">Dragonkin Appearance Changer</a>
+<td>Kang</td>
+<td>10347</td>
+<td>2014-09-05</td>
+<td>2014-09-05</td>
+<td>0</td>
+<td>English</td>
+</tr>
+<tr>
 <td><a href=https://neverwintervault.org/project/nwn2/module/dragonglade title="Someone is trying to abduct a dragon chick from it's dragon/druid mother. Can you and your faithful pet wolverine uncover the plot?---------------------You will need at least Mask of the Betrayer (MotB), and most likely Storm of Zehir (SoZ) as well. I have tried to avoid using SoZ models or scripts in the module.---------------------GameplayThe module is playable starting with a level 1 character. Several opponents in the game level up to match the average party level, so there are a few challenges for higher-level characters as well.Players can only sleep in beds or beside camp fires (click on beds or camp fires to interact with them)Raw meat can be cooked on camp fires or stovesWhen the PC dies there is no respawn - so save frequentlyThe HAK pack changes the panther animal companion into a snow leopard. The snow leopard blueprints are courtesy of 'Cyphre's Companions Pack'.">Dragonglade</a>
 <td>Dann Pigdon</td>
 <td>28198</td>
@@ -2273,29 +2300,11 @@
 <td>English</td>
 </tr>
 <tr>
-<td><a href=https://neverwintervault.org/project/nwn2/module/dmfi-base-mod-nwn2-builders title="Version 1.0 of the download package. Includes two base mod versions (full and lite), hak files, and Builder's Guide.">DMFI Base Mod for NWN2 Builders</a>
-<td>Carlo</td>
-<td>1582</td>
-<td>2014-08-24</td>
-<td>2019-03-20</td>
-<td>0</td>
-<td>English</td>
-</tr>
-<tr>
 <td><a href=https://neverwintervault.org/project/nwn2/module/dmd-campaign-base-module-start-area title="(10/9/07 update: The base module has been upgraded to HCR2 version 1.02 and also inlcude the HCR2 CopyObject & corpse system workaround for patch 1.10. I also upgraded it with DMFI Patch 1.04-1. I also added an area non-accessible to players, with the required HCR2_NOACCESS waypoint, which was missing from the last version. Please let me know if you find other errors or omissions). This is a base module I use whenever I start to build a new module for my weekly DM'd mutliplayer campaign. IT IS NOT A PLAYABLE MODULE - it is only three areas (a start area, the HCR2 fugue plane, and an area that houses a HCR waypoint). I am uploading it here for anyone who uses the same base scripts I use, and who doesn't want to go through the hassle of setting up these in his or her module. The module contains the following:  HCR2 bleeding and death script (NOTE: I changed the HCR Healer's Kit to have unlimited uses a day, to make it more like a healing widget like in HABD. If you want to change it back...">DM'd Campaign Base Module / Start Area</a>
 <td>Venture</td>
 <td>9041</td>
 <td>2014-08-07</td>
 <td>2014-09-19</td>
-<td>0</td>
-<td>English</td>
-</tr>
-<tr>
-<td><a href=https://neverwintervault.org/project/nwn2/module/dm-101-nwn2 title="Contains DM 101 mod, DMFI Tools hak, installation instructions, and module documentation">DM 101 for NWN2</a>
-<td>Carlo</td>
-<td>12387</td>
-<td>2014-07-31</td>
-<td>2018-11-21</td>
 <td>0</td>
 <td>English</td>
 </tr>
@@ -2354,15 +2363,6 @@
 <td>English</td>
 </tr>
 <tr>
-<td><a href=https://neverwintervault.org/project/nwn2/module/dark-waters-2 title="2008-03-14 Hall of Fame Interview Adam Miller BeyondThePale">Dark Waters 2</a>
-<td>Adam Miller</td>
-<td>497571</td>
-<td>2014-07-20</td>
-<td>2021-05-02</td>
-<td>15</td>
-<td>English, Hall of Fame, Roleplay, Romance</td>
-</tr>
-<tr>
 <td><a href=https://neverwintervault.org/project/nwn2/module/dark-waters-1-highcastle title="2007-04-10 Interview with NWN Hall of Fame Author Adam Miller. (Dark Waters) Maximus">Dark Waters 1 - Highcastle</a>
 <td>Adam Miller</td>
 <td>169894</td>
@@ -2417,6 +2417,24 @@
 <td>English, Hall of Fame</td>
 </tr>
 <tr>
+<td><a href=https://neverwintervault.org/project/nwn2/module/daark-twins title="This file contains the module, the official Jakob Daark character file, and the ReadMe">Daark Twins</a>
+<td>E.C.Patterson (aka ciViLiZed)</td>
+<td>12372</td>
+<td>2014-09-09</td>
+<td>2014-09-19</td>
+<td>0</td>
+<td>English</td>
+</tr>
+<tr>
+<td><a href=https://neverwintervault.org/project/nwn2/module/cry-wolf-2025 title="Originally posted as part of the Obsidian NWN2 Grim Fairy Tale Competition in 2007Just to prove that cynical re-issuing of old content with minimal changes is not the sole preserve or corporates, here is a (slightly) updated mod from 2007. 18 years in the making , is that a record ? , Approx 1-2 hours of Grim Fairy Tale themed content.Dark, Comedic tone.Some Planescape setting mentions / theming.Many non-standard enemies.Hard, tactical combat. Level 7-9.Optional Puzzles and a scoring system.Custom music (please install in music folder)Nintendo switch 2 support V1.05 changes:Cleaned up a few bugsRe-balanced some content to make a little easierAdding some more obvious hints for puzzlesCleaned up some visualsAdded spoilers to ingame journalSome lies about Nintendo switch 2 support,. Have fun, Lorft.  ">Cry Wolf 2025</a>
+<td>Lorft</td>
+<td>33996</td>
+<td>2025-06-13</td>
+<td>2025-06-14</td>
+<td>5</td>
+<td>English</td>
+</tr>
+<tr>
 <td><a href=https://neverwintervault.org/project/nwn2/module/cry-wolf title="A humorous mix of story, tactical combat and puzzles. 90 minutes of gameplay, with replay value. Level 6-8 Single Player only (will auto level you if you are lower). Introduction “This is a tale of missing Brothers, and disappearing towns. Of a quest for Perfection, or perhaps just gold. Maidens in Towers, Giants up Beanstalks and Sleeping Beauties. “ It’s all just a fairy tale, isn’t it? Features: •Varied challenging combat – Many fights with custom scripts. •A scoring system that lets you know how well you have done. •A set of devious puzzles to solve and collect the Puzzlers reward. •Play any race, class or gender you want. •Balanced for full tactical party combat. •Use of non combat skills/stats. •Many custom items and weapons with full descriptions. •Many Hidden Easter eggs in reference to Planescape and Fairy Tales. An entry for the April 2007 Brothers Grimm contest. The Cry Wolf leader board can be found at Link The leader board was active until the end of may 2007. Thanks to al...">Cry Wolf</a>
 <td>Lorft</td>
 <td>33953</td>
@@ -2424,15 +2442,6 @@
 <td>2015-12-05</td>
 <td>10</td>
 <td>English, Hall of Fame</td>
-</tr>
-<tr>
-<td><a href=https://neverwintervault.org/project/nwn2/module/crossroads-fate title="Enter the melancholic city of Tsurlagol in the shores of the Sea of Fallen Stars, where a sad story is taking place. Fate plays a cruel game to the group of adventures known as 'The Five'. What path will you choose?This mod was made for the Obsidian's 'Grimm’s Fairy Tales' contest. The first version was incomplete due to time limits. This is the final version of it, as it was originally planned. Please have in mind that the mood of this story was inspired by reading some of the Grimm's tales and may seem a bit absurd out of that frame, after all, this is an anti-heroic tale. A level 20 character is suggested, the game will level you up if you are not 15-20 level. For installation instructions and to learn how this is related to the Grimm's tales, please read the included ReadMe file.Features:-Introduction movie.-Three different movie endings.-Two companion and two henchmen.-Forgotten Realms setting.TIPSImportant:-Turn of the shadows option (game options->advance tab)-Set game to normal...">Crossroads of Fate</a>
-<td>Novalis</td>
-<td>32674</td>
-<td>2015-10-14</td>
-<td>2015-10-28</td>
-<td>0</td>
-<td>English</td>
 </tr>
 <tr>
 <td><a href=https://neverwintervault.org/project/nwn2/module/crimson-cherry-2-demon-womb-chapter1 title="Warning spoilers. This is a list of quests avaiable. It is recommended that the game be played once before veiwing this list">Crimson Cherry 2: Demon Womb (Chapter1)</a>
@@ -2446,9 +2455,9 @@
 <tr>
 <td><a href=https://neverwintervault.org/project/nwn2/module/crimmor title="NWN2: Enhanced Edition: Crimmor hasn't been specifically tested with it, but is expected to work without any issues and I will fix any bugs reported. Crimmor is a module for solo rogues of level 8 (you can level up and receive appropriate gold ingame). Use skills and rogue abilities as a Shadow Thief in the streets of the Amnian city of Crimmor.You may like this module, you may not. Crimmor is experimental and is focused primarily on the urban environment and providing the 'feel' of a city, as well as rogue focused non-combat gameplay. If you are all about combat, this is probably not the module for you.Crimmor pushes the NWN2 toolset's hard limit on objects in the external city areas, additionally, there are numerous npcs in the city. I recommend a modern pc. You've been warned.Crimmor takes many things, from food, street, shop, and npc names, to the unusual relationship of the Shadow Thieves to the city, from Ed Greenwood's article on the city in Dragon Magazine issue 334. Thank you ...">Crimmor</a>
 <td></td>
-<td>1678</td>
+<td>534074</td>
 <td>2013-04-13</td>
-<td>2026-02-16</td>
+<td>2026-03-24</td>
 <td>10</td>
 <td>English, Roleplay, Tricks & Traps</td>
 </tr>
@@ -2457,6 +2466,15 @@
 <td>K2</td>
 <td>391</td>
 <td>2014-08-21</td>
+<td>2014-09-05</td>
+<td>0</td>
+<td>English</td>
+</tr>
+<tr>
+<td><a href=https://neverwintervault.org/project/nwn2/module/craftingmod title="This crafting module is for builders who are interested in making their own custom crafting recipes.This module is a tool to assist in the testing of new crafting recipes, and includes various ways to access components, and characters who will explain the ins and out of the various crafting systems.______________________________________IGN Vault Download ListingNameTypeSizeDownloadsCrafting.zipzip458.05Kb2384Zip contains the crafting module. ">Crafting.mod</a>
+<td>ChazM</td>
+<td>469</td>
+<td>2014-08-20</td>
 <td>2014-09-05</td>
 <td>0</td>
 <td>English</td>
@@ -2489,6 +2507,15 @@
 <td>English, Hall of Fame</td>
 </tr>
 <tr>
+<td><a href=https://neverwintervault.org/project/nwn2/module/cnr-craftable-natural-resources-nwn2 title="CNR for NWN2 demo/test module + ERF + HAK + Prefabs">CNR (Craftable Natural Resources) for NWN2</a>
+<td>	Festyx & Hrnac (original NWN1 authors) Olblach,[MD]Sephiroth & charlievale (NWN2 adaptation)</td>
+<td>7932</td>
+<td>2014-08-20</td>
+<td>2014-09-05</td>
+<td>0</td>
+<td>English</td>
+</tr>
+<tr>
 <td><a href=https://neverwintervault.org/project/nwn2/module/city-dead title="MOTB v1.03 finally get undead to become friendly if you are sacrificed on altar. Only undead factions whose leader you have killed will still attack.">City of the Dead</a>
 <td>MikeLM9215</td>
 <td>29978</td>
@@ -2502,15 +2529,6 @@
 <td>slowdive_fan</td>
 <td>14561</td>
 <td>2016-08-15</td>
-<td>2016-09-06</td>
-<td>0</td>
-<td>English</td>
-</tr>
-<tr>
-<td><a href=https://neverwintervault.org/project/nwn2/module/chronicles-charnia-escape-charn title="This is a spin off idea inspired by the Chronicles of Narnia by C.S. Lewis (mostly from 'The Magician's Nephew'). The story takes place in Charn just before the end of all living by use of the Deplorable Word. This plays more like a short story than a RPG. It was designed to be more of a background story to future modules. It was meant to be played as a male, human, fighter type (fighter, ranger, paladin, etc.). Your character's age is 21 and you should be of good alignment. I know, too many restrictions. But, like I said, it's more of a short story than a RPG. Also, now available 'The Exile' (see my signature below in comments section for link). Files Here are the stats from the old Vault:    Name  Type  Size  Downloads    Charnia_1_end.wmv wmv  4Mb  264    If the ending BIK file does not fire in game you can just watch this WMV version after finishing the module.   Escape_from_Charn_READ_ME.txt txt 3.2Kb 2380    --   Escape_from_Charn_v1_2.rar rar  8.7Mb 4005    contains module and c...">Chronicles of Charnia - Escape from Charn</a>
-<td>slowdive_fan</td>
-<td>34396</td>
-<td>2016-08-13</td>
 <td>2016-09-06</td>
 <td>0</td>
 <td>English</td>
@@ -2561,15 +2579,6 @@
 <td>English, Hall of Fame, Romance</td>
 </tr>
 <tr>
-<td><a href=https://neverwintervault.org/project/nwn2/module/bgtscc-jegs-testing-module title="Jeg's Training's Module v17 for BGTSCC, by Ivan38Rus. Original Jegs by WhatIsSol. See the included text file for installation notes.Notes: You must have 'bg.tlk' and all of the 'bg_*.hak' files in order to use this module.I cannot promise to keep it up to date.I cannot guarantee all of custom persistent world content will function 100% correctly in this module. Classical BGTSCC Jegs Training Halls version 28/Januari/2014- The Classical version contains Jegs with the old (classical) BGTSCC files.- Newer content is mostly not included in it but you can still use it to make and test new characters.  Beta Advanced Jegs for BGTSCC version 27/november/2015- The Beta Advanced version contains Jegs with all the experimental (not definitive) BGTSCC features and developments.+ Magic replacement system extension is included in this version. + Ranged Combat & Cover system extension is included & enabled in this version. + Melee Combat system extension is included & enabled in this version. + Light...">BGTSCC Jegs testing module</a>
-<td>Rasael</td>
-<td>30843</td>
-<td>2015-04-29</td>
-<td>2015-11-28</td>
-<td>0</td>
-<td>English</td>
-</tr>
-<tr>
 <td><a href=https://neverwintervault.org/project/nwn2/module/betrayal-krondor title="[Note: This release was last updated 03-18-2011.] An up-and-coming remake of the 1993 Dynamix game Betrayal at Krondor, based on Raymond Feist's 'Riftwar Saga' novels. I'm trying to match the original game mechanics as well as I can while still 'reinterpreting' the game with the NWN2 engine: Weapons and armor are damaged in combat and must be repaired; rations are required for survival, etc. This is by no means a hack-and-slash episode: careful attention to the storyline and character development is crucial for your enjoyment of this game. The first chapter is a bit slow-moving, but I assure you the game quickly picks up the pace as the chapters progress. This is a beta version of the first of nine chapters, so please no voting as this is still a work in progress. Your comments and suggestions, however, are welcome.Please read the instructions carefully when installing. I highly recommend using TonyK's AI mod, which enhances the combat and group control significantly.Among many others,...">Betrayal at Krondor</a>
 <td>Dynamix/Feist/Batmanis64</td>
 <td>504360</td>
@@ -2588,7 +2597,7 @@
 <td>English, Roleplay</td>
 </tr>
 <tr>
-<td><a href=https://neverwintervault.org/project/nwn2/module/berras-estate-horrors-halloween-2008-event-stand-alone-release-v10-released-30th title="A short, [stand-alone] Dark Fantasy with a Halloween / Haunted House-vibe. My first and only module for Neverwinter Nights 2.Join the Officlal Tales Tribe Community HERE + Get FREE stories: https://birgertales.com/-- SEASONAL COLLABORATION --~ Stand alone part of the 'Halloween 2008 Event Module' ~ *** Requires the NWN2-expansion Mask of the Betrayer ***STORYThis years' Halloween it's pretty chilly outside. That in particular makes you regret that you didn't bring your warm sweater, your halloween scarf or your thermos with hot chocolate. You've been trick or treating for awhile now and even though your belly is pretty full of halloween candy, you start to feel really cold. Worse yet, as darkness keeps closing in around you, you also start to feel a storm approaching. You quickly decide to take shelter inside the first building you come across. The problem is, that this happens to be a pretty creepy estate... and little did you know... that this building would turn out to be Berra's Es...">Berra's Estate of Horrors, "Halloween 2008 Event", Stand Alone Release - v.1.0 (Released 30th of Oct</a>
+<td><a href=https://neverwintervault.org/project/nwn2/module/berras-estate-horrors-halloween-2008-event-stand-alone-release-v10-released-30th title="A short, [stand-alone] Dark Fantasy with a Halloween / Haunted House-vibe. My first and only module for Neverwinter Nights 2.Join the Officlal Tales Tribe Community HERE + Get FREE stories: https://birgertales.com/-- SEASONAL COLLABORATION --~ Stand alone part of the 'Halloween 2008 Event Module' ~ *** Requires the NWN2-expansion Mask of the Betrayer ***STORYThis years' Halloween it's pretty chilly outside. That in particular makes you regret that you didn't bring your warm sweater, your halloween scarf or your thermos with hot chocolate. You've been trick or treating for awhile now and even though your belly is pretty full of halloween candy, you start to feel really cold. Worse yet, as darkness keeps closing in around you, you also start to feel a storm approaching. You quickly decide to take shelter inside the first building you come across. The problem is, that this happens to be a pretty creepy estate... and little did you know... that this building would turn out to be Berra's Es...">Berra's Estate of Horrors, "Halloween 2008 Event", Stand Alone Release - v.</a>
 <td>Birger Tales</td>
 <td>3129</td>
 <td>2020-10-02</td>
@@ -2597,11 +2606,20 @@
 <td>English, Horror</td>
 </tr>
 <tr>
+<td><a href=https://neverwintervault.org/project/nwn2/module/being-good title="You recently graduated at the academy of tear-avoiders and now need to fulfill a mission where you spread the teachings you acquired in countless lessons:Avoid the tearsBurst their fearsMake them smileAll the whileAnd all that to get prepared for your destiny: Becoming a fairy godmother!Playable with any character of any level and any classA little note on design: I know this module is short. But you need to understand that creating something imaginative that keeps in the player's mind and raise it to a level of quality which won't disappoint yourself takes its time. Also I could have made it longer, but I decided to use more or less a way of indirect characterization (like for instance the explanation of the wolf's fear of water) to introduce the characters and their connections to the environment. This makes the game much shorter but is aiming at increasing the intensity of the experience.As a few (or a lot?) of you know I'm not a native speaker. So if you notice a case of serious la...">Being Good</a>
+<td>Christian Mayr</td>
+<td>45231</td>
+<td>2014-09-13</td>
+<td>2014-09-19</td>
+<td>0</td>
+<td>English</td>
+</tr>
+<tr>
 <td><a href=https://neverwintervault.org/project/nwn2/module/bedine title="NWN2: Enhanced Edition: Bedine hasn't been specifically tested with it, but is expected to work without any issues and I will fix any bugs reported. Play as a Bedine tribesman in the sands of the Anauroch.'What about the was-ey?', a girl asked.'Can you touch the sun? Can you touch the moon, or touch death? No. The wasa-ey are of the land, and of the Bedine. The sand you sit on and run your fingers and toes through. This is Wasa-ey Sister Sand, Ermal Sheqyeqh. She is as much a threat as At'ar, and just as capricious, but you can touch her, she is more real for us than At'ar. Wasa-ey El Ma'ra Dat-ur Ojhogo inhabits the sandstone spire that bears his name. The spire serves as a lookout place for our scouts, but only because El Ma'ra allows it. If he does not want you to sit upon his head, or if you do not offer him a drop of your drinking water, he will throw you from the spire.'A campaign for first level players. Note: You will have all your equipment destroyed on entry, and will have th...">Bedine</a>
 <td>kamal</td>
-<td>7</td>
+<td>1306773</td>
 <td>2016-12-18</td>
-<td>2026-02-16</td>
+<td>2026-03-24</td>
 <td>5</td>
 <td>English</td>
 </tr>
@@ -2660,6 +2678,15 @@
 <td>English, Hall of Fame, PnP</td>
 </tr>
 <tr>
+<td><a href=https://neverwintervault.org/project/nwn2/module/avendale title="Original Page informationName                   AvendaleAuthor               schatten9Submitted / Updated   11-16-2006 / 01-14-2007Category               Single Player OR Multiplayer (1-4 Players)Scope                   SmallContent               TeenTricksTraps           LightRoleplay               MediumHackSlash               MediumLevelMin               01LevelMax               02Gameplay Hours       02Categories           Roleplay, small story, some side-quests, crafting available, some hack'n slash, trapsPatch                   1.03 Description You realize you've been following the road for days, almost as if driven by some unknown compulsion. However, you cannot recall even when you started or where you're traveling from. As your head begins to clear, you notice again a sense of urgency within you, that you must travel further. Perhaps the answers to your past lie somewhere ahead. Your fate beckons from Avendale... This is my first adventure with the NWN2 toolset. I'm still lear...">Avendale</a>
+<td>schatten9</td>
+<td>62972</td>
+<td>2022-07-30</td>
+<td>2022-07-30</td>
+<td>5</td>
+<td>English, Roleplay</td>
+</tr>
+<tr>
 <td><a href=https://neverwintervault.org/project/nwn2/module/distant-shore-module-strange-world-universe title="At a Distant Shore - a module by andgalf set in the A Strange World UniverseThis is a single player story driven module for a level 1 male player character of any alignment in a custom world. (Need to play a male character - the story won't make sense with a female character. Sorry!). Most of the dialogue choices assumes you're not an evil character. This is a standalone adventure and you don't need to have played any of the other 4 modules in the A Strange World series. However, things like lore, locations and other stuff mentioned might confuse you a bit if you haven't played the other modules in the series.This module took more than 1 year of all my free time to make. So a lot of hard work went into this. Please consider this and don't be too harsh with your critique. Bear in mind: I am no writer, programmer or game designer. This is just a hobby of mine. I've only used prefab areas (except one small area), just as with my other modules, so no areas you see have been done by me, onl...">At a Distant Shore - A module in the A Strange World universe</a>
 <td></td>
 <td>1659238</td>
@@ -2669,13 +2696,13 @@
 <td>English, Roleplay, Romance</td>
 </tr>
 <tr>
-<td><a href=https://neverwintervault.org/project/nwn2/module/asylum-corpse-vote title="Big Zonzai received this walkthrough over a month ago. So why not releasing it to public?">Asylum: A Corpse, A Vote</a>
+<td><a href=https://neverwintervault.org/project/nwn2/module/asylum-bet-corpse title="WHAT THE HECK ARE YOU DOING HERE??? DOWNLOAD, PLAY AND VOTE FOR THE SECOND EPISODE 'A CORPSE, A VOTE' TOO! IT DESERVES MUCH MURE ATTENTION THAN THIS AMATEURISH ATTEMPT OF A 'MODULE'! HERE: Link ---------------------------------------- Asylum: A Bet, A Corpse v1.5 Oh my ladies, oh my gentlemen, Here is the first module of the Asylum-Trilogy and I'd love to welcome you! I'm very nervous, because I've never been in front of such a big audience before. In fact I spent the last few months in a top-secret laboratory as a slavery guinea pig of an insane nameless creature, who only called himself 'Builder'. These are also the reasons for my pale skin and my uncountable amount of gashes. You need to understand; my tormentor was just a freaky perfectionist, always putting new dresses on me and cutting and inserting pieces out of my flesh while putting me in front of his mirrors, lightning every single inch of my body and crying and shouting at me the whole day mean things like 'You are too fat!'...">Asylum: A Bet, A Corpse</a>
 <td>Christian Mayr</td>
-<td>136217</td>
-<td>2014-07-27</td>
-<td>2015-05-26</td>
+<td>98755</td>
+<td>2014-07-20</td>
+<td>2015-12-05</td>
 <td>10</td>
-<td>English, Hall of Fame</td>
+<td>English, Hall of Fame, Horror</td>
 </tr>
 <tr>
 <td><a href=https://neverwintervault.org/project/nwn2/module/asphyxia title="Asphyxia -- By: Azenn  THIS REQUIRES 1.22 AND MOTB  =====================   In the depths of the frozen north, secrets of the past lie buried under the thick sheets of ice and snow. Icewind Dale, a recently settled land at the peak of Faerun, beckons many to its lawless domain. Yet, at what price will the indigenous people -- the local barbarians -- have to pay for the encroaching outsiders? And what ancient dangers of the past lay in wait, ready to take advantage of the new turmoil? That is for the destined to find out...    Updated: 4/12/09 - Version 1.09    ========================================  Credits:   Music:   Planescape:Torment – Mark Morgan and Richard Band   Icewind Dale 2 – Inon Zur   Baldur's Gate – Michael Hoenig   ========================================  Final Note:   Please post any bugs, feedback, questions, concerns or hate mail here in the comment section.   Either that, or email me at [email protected]. I promise I will read it and get back to you.   I would gre...">Asphyxia</a>
@@ -2696,6 +2723,24 @@
 <td>English</td>
 </tr>
 <tr>
+<td><a href=https://neverwintervault.org/project/nwn2/module/anphillia-2-pw-prefab title="This is project that has been worked on for 2 years, has made great progress but unfortunately must be discontinued. The team has decided the best way to give meaning to our work is by sharing it with the community. So the below link provides the PW module and accompanying haks to whoever wishes to take it apart for their own use or to continue where we left off. The module contains many great original areas and some neat scripts such as a pvp faction script for use in an arena server, among many other things that many may find useful. Enjoy. __________________________________________ IGN Vault Download Listing    Name Type Size Downloads   Anphillia_II.7z 7z 1.2Mb 528   --   override.7z 7z 167.5Kb 398   --   fileinfo.html html -- 830   External Website Beyond Our Control      ">Anphillia 2 PW Prefab</a>
+<td>Anphillia Team</td>
+<td>1458</td>
+<td>2014-08-09</td>
+<td>2014-09-05</td>
+<td>0</td>
+<td>English</td>
+</tr>
+<tr>
+<td><a href=https://neverwintervault.org/project/nwn2/module/animation-viewer-module title="This makes easy to view any creature animation ingame.There are a lot more animations available in NWN2 than what you can see using the toolset's Appearance Viewer plugin, and this module allows you to play a specific animation by using the animation file name.To get a list of all animations, you need to extract all data/lod-merged*.zip files inside NWN2 install directory. All GR2 files (except those ending with _skel) are animations. You can find which animation are used for any creature by looking at the NWN2_Skeleton_File column of appearance.2da table. Module usage:Use chat to issue commands to configure the creature:%: Play idle animation*1attack01: Play $model_$stance_1attack01una_1attack01: Play $model_una_1attack01 animation=p_hhf: Change creature model to a creature using a p_hhf* skeleton-: Unequip all items+: Equip all itemsExample:=c_night to change the creature into a Shadow or Nightshade_Nightwalker modeluna_taunt to play the c_night_una_taunt.gr2 file- to remove equipped...">Animation viewer module</a>
+<td></td>
+<td>1178</td>
+<td>2018-09-11</td>
+<td>2018-09-11</td>
+<td>0</td>
+<td>English</td>
+</tr>
+<tr>
 <td><a href=https://neverwintervault.org/project/nwn2/module/animation-viewer title="Small test module to view animations for male and female humanoids. Includes routines for chair and bed animations. Also included are interactive placeables which maintain their animation and sound filenames locally.">Animation Viewer</a>
 <td>John B. Gardner</td>
 <td>1066</td>
@@ -2705,11 +2750,11 @@
 <td>English</td>
 </tr>
 <tr>
-<td><a href=https://neverwintervault.org/project/nwn2/module/unwelcome-winter-guest-nwn2 title="Every winter solstice eve a monster comes into the village of Lonelywood and steals a child. Can you save the child before it is too late.Version 1.01. Fixed transition and conversation problems.Version 1.02. Fix conversation which allows unlimited experience. Add Guest to name.Version 1.03. Fix factions, kid, praying at altar and druid's name.">An Unwelcome Winter Guest NWN2</a>
-<td>MikeLM9215</td>
-<td>5275</td>
-<td>2017-09-20</td>
-<td>2017-09-20</td>
+<td><a href=https://neverwintervault.org/project/nwn2/module/all-adventurers-needs title="Original Submission Name   All The Adventurers Needs  Author   Robert 'Snakebite' Stonier  Submitted/Updated 02-20-2007 / 02-20-2007  Category   No Story (Ex: Resource, Level ups, etc.)  Module Types     Scope   Small  Content   Everyone  TricksTraps Nonexistent  Roleplay   Nonexistent  HackSlash   Nonexistent  LevelMin   Any  LevelMax   Any  Gameplay Hours 01  Categories  Resource, 'Treasure House'  Patch   1.01   Description   This is a module designed for people who have completed the game once and are starting again.   This module allows you to acquire many extremely powerful items before starting the campaign.   I recommend that users complete the game without this first, so as they get full satisfaction from the game.    I hope you enjoy this module. ">All The Adventurer's Needs</a>
+<td>Robert "Snakebite" Stonier</td>
+<td>7060</td>
+<td>2018-06-10</td>
+<td>2018-06-10</td>
 <td>0</td>
 <td>English</td>
 </tr>
@@ -2719,6 +2764,15 @@
 <td>19669</td>
 <td>2014-08-18</td>
 <td>2014-09-05</td>
+<td>0</td>
+<td>English</td>
+</tr>
+<tr>
+<td><a href=https://neverwintervault.org/project/nwn2/module/alcheringa-post-heroic-dnd-adventure title="the ultimate in-your-face spoiler for the mod. Only use it if you got stuck and neither the journal nor the emissary is helpful enough, or you've completed the mod and want to see if you've missed anything (of course, you can also read it if you don't really intend to play it and just want to check what's inside)">Alcheringa, a post-heroic DnD adventure</a>
+<td>Adoniram</td>
+<td>174266</td>
+<td>2014-07-26</td>
+<td>2014-09-19</td>
 <td>0</td>
 <td>English</td>
 </tr>
@@ -2768,15 +2822,6 @@
 <td>English</td>
 </tr>
 <tr>
-<td><a href=https://neverwintervault.org/project/nwn2/module/veil-lifted-0 title="Information about the module and the world, as well as known issues and workarounds.">A Veil Lifted</a>
-<td>Allyndn the Beggar</td>
-<td>43151</td>
-<td>2014-09-07</td>
-<td>2014-09-19</td>
-<td>0</td>
-<td>English</td>
-</tr>
-<tr>
 <td><a href=https://neverwintervault.org/project/nwn2/module/sword-money title="The missing file for the correct vizualization of the clothes of the mermaid and prostitutes, to put with the sas_override.">A Sword for Money</a>
 <td>Luca "SETH" Devita</td>
 <td>226909</td>
@@ -2820,15 +2865,6 @@
 <td>2020-02-26</td>
 <td>0</td>
 <td>English, Romance</td>
-</tr>
-<tr>
-<td><a href=https://neverwintervault.org/project/nwn2/module/strange-world-3-unofficial-patch title="This is an Unofficial Patch for the wonderful mod 'A Strange World 3 - Diary of an Adventurer' by andgalf. This patch fixes many bugs and transition crashes, and also removes the lipflap animations from most PC response nodes. A full changelog is in the download.You must have the original 'A Strange World 3 - Diary of an Adventurer' mod installed before installing this patch. The link to the original mod is in the required projects below.  Installation:You must have A Strange World III fully installed first.Extract this file into your <myDocs\Neverwinter Nights 2> folder. OVERWRITE ALL FILES!Start a new game by going into the New Campaign menu and selecting A Strange World III.A special thankyou to GCoyote for assisting with the testing of this patch!">A Strange World 3 Unofficial Patch</a>
-<td>travus</td>
-<td>44700</td>
-<td>2024-10-27</td>
-<td>2024-10-27</td>
-<td>5</td>
-<td>English</td>
 </tr>
 <tr>
 <td><a href=https://neverwintervault.org/project/nwn2/module/strange-world-2-unofficial-patch title="This is an Unofficial Patch for the wonderful mod 'A Strange World 2 - The Legend of the Sinwa' by andgalf. This patch converts the mod to campaign format, fixes the ability scores of the companions, fixes many bugs, and also removes the lipflap animations from most PC response nodes. A full changelog is in the download. You must have the original 'A Strange World 2 - The Legend of the Sinwa' mod installed before installing this patch. The link to the original mod is in the required projects below.   Installation: 'A Strange World II' v.1.01 must be fully installed first.DELETE the 'A Strange World II v.1.01.mod' file from your module folder.Extract this patch into your <myDocs\Neverwinter Nights 2> folder. Start a new game by going into the New Campaign menu and selecting Strange World II. A special thankyou to GCoyote for assisting with the testing of this patch!">A Strange World 2 Unofficial Patch</a>
@@ -2937,6 +2973,15 @@
 <td>2015-12-05</td>
 <td>15</td>
 <td>English, Hall of Fame</td>
+</tr>
+<tr>
+<td><a href=https://neverwintervault.org/project/nwn2/module/dark-and-stormy-night title="Official Project 9 release Version 1.05 Patched to 1.23x Playable with NWN2 MoTB and SoZ">A Dark and Stormy Night</a>
+<td>Kryton213</td>
+<td>23560</td>
+<td>2014-08-31</td>
+<td>2014-09-05</td>
+<td>0</td>
+<td>English</td>
 </tr>
 <tr>
 <td><a href=https://neverwintervault.org/project/nwn2/module/35-multiple-summonings title="Summon up to 10 creatures at a time choosing from a gui listing 4 per spell level. Standard summoning spell still works and is untouched. Read me file details instalation.Here is a youtube link of a demo:LinkPlease let me know if you like this module. If I get enough feedback from people that would like to use it in hak form i would be more than happy to go through the trouble of packaging it. Hope you enjoy.">3.5 Multiple Summonings</a>

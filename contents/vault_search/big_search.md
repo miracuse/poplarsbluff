@@ -4,6 +4,3 @@ title: Vault Search Tool (NWN 1)
 ---
 
 # Vault Search Tool (Neverwinter Nights 1)
-
-* Hover over a module's title to display its description.
-* Click [here](../index.html) to go back to the blog.
