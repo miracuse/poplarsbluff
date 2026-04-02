@@ -1,3 +1,39 @@
+//
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Two equal columns */
+    gap: 20px; /* Space between columns */
+}
+
+.grid-item {
+    padding: 20px; /* Padding inside each grid item */
+}
+
+.grid-right {
+  background-color: $orange-300;
+  margin: 10px;
+  border-radius: 10px;
+}
+
+.dt-container {
+  margin: 20px;
+}
+
+//
+
+.aref-ruqaa-regular {
+  font-family: "Aref Ruqaa", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.aref-ruqaa-bold {
+  font-family: "Aref Ruqaa", serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+
 // CSS for collapsible sections.
 input[type='checkbox'] {
   display: none;

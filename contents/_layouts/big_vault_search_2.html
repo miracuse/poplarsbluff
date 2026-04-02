@@ -6,8 +6,10 @@
   <meta http-equiv="X-UA-Compatible" content="IE=Edge">
 
   <link rel="stylesheet" href="{{ '/assets/css/just-the-docs-default.css' | relative_url }}">
-
   <link rel="stylesheet" href="{{ '/assets/css/just-the-docs-head-nav.css' | relative_url }}" id="jtd-head-nav-stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Aref+Ruqaa:wght@400;700&display=swap" rel="stylesheet">
 
   <style id="jtd-nav-activation">
   {% include css/activation.scss.liquid %}
@@ -47,8 +49,8 @@
     <script src="https://cdn.datatables.net/2.3.7/js/dataTables.js"></script>
     <script defer type="module">
     DataTable.defaults.layout = {
-        topStart: null,
-        topEnd: "search",
+        topStart: "search",
+        topEnd: null,
     };
     let table = new DataTable('#Vault', {
         scrollY: '',
@@ -66,18 +68,23 @@
 
 {{ content }}
 
-<ul>
-  <li>Click <a href="../index.html">here</a> to go back to the blog.</li>
-  <li>Hover over a module's title to display its description.</li>
-  <!-- <li>Hover over the info icon for a breakdown of the Popularity Score. <b title="Scored out of 25 points. Hall of Fame (+10), updated in the past five years (+5), at least ten votes on the Vault (+5), at least twenty votes on the Vault (+5).">&#9432;</b></li> -->
-   <li>Popularity Score Breakdown
-    <ul>
-      <li>(+10) Hall of Fame</li>
-      <li>(+05) Updated in Past Five Years</li>
-      <li>(+05) >= 10 Votes on the Vault</li>
-      <li>(+05) >= 20 Votes on the Vault</li>
-    </ul>
-</ul>
+<div class="grid-container">
+    <div class="grid-item grid-left">
+      <h1 class="aref-ruqaa-bold">Vault Search Tool</h1>
+      <ul>
+        <li><h3 class="aref-ruqaa-bold">Blog Links: <a href="../index.html">Home</a> - <a href="../vault_search/big_search.html">NWN 1 Search</a> - NWN 2 Search</h3></li>
+        <li><h3 class="aref-ruqaa-bold">External Links: <a href="https://neverwintervault.org/">Vault</a> - <a href="https://nwn.fandom.com/wiki/Main_Page">Wiki</a> - <a href="https://nwn.wiki/spaces/NWN1/overview">Builder Wiki</a></h3></li>
+      </ul>
+    </div>
+    <div class="grid-item grid-right">
+      <h3>User's Guide</h3>
+      <ul>
+        <li>Popularity Score Calculation <b title="(+10) Hall of Fame | (+5) Updated in Past Five Years | (+5) 10 or More Votes | (+5) 20 or More Votes">&#9432;</b></li>
+        <li>Search by module name, author, or tag.</li>
+        <li>Hover over a module's title to display its description.</li>
+      </ul>
+    </div>
+</div>
 
 <table id="Vault" class="display">
 
