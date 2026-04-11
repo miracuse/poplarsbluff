@@ -67,5 +67,5 @@ nav_order: 1
 {% include notes.html content="
 The Revised Paladin is is very similar to their 3E counterpart.<br><br>
 
-The new Paladin is a 'magic knights' that supplements their martial talents with divine spells. Unlike the original version of the class, Revised Paladins are spontaneous Charisma spellcasters. Their abilities no longer depend on a high Wisdom score.
+The new Paladin is a 'magic knight' that supplements their martial talents with divine spells. Unlike the original version of the class, Revised Paladins are spontaneous Charisma spellcasters. Their abilities no longer depend on a high Wisdom score.
 " %}

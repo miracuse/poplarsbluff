@@ -68,6 +68,21 @@ nav_order: 1
 
 {% include full_caster_sorcerer.md %}
 
+### Wild Shapes
+
+{: .summary}
+> See the [Greater Wildshape Wiki Page](https://nwn.fandom.com/wiki/Greater_wildshape_I) for the standard statistics. Note that armor and accessories (amulets, rings, etc.) have their properties added to the form.
+
+#### Wyrm Shape
+
+| Name  | STR  | CON  | DEX  | AC   | Temp HP | Size  | Attack  | Notes                               |
+| :---- | :--- | :--- | :--- | :--- | :------ | :---- | :------ | :---------------------------------- |
+| Blue  | 16   | 16   | 16   | 19   | +15     | small | 1d4 + 2 | True Seeing, Imm. Paralysis, Breath |
+| Black | 16   | 16   | 16   | 19   | +15     | small | 1d4 + 2 | True Seeing, Imm. Paralysis, Breath |
+| Red   | 16   | 16   | 16   | 19   | +15     | small | 1d4 + 2 | True Seeing, Imm. Paralysis, Breath |
+| Green | 16   | 16   | 16   | 19   | +15     | small | 1d4 + 2 | True Seeing, Imm. Paralysis, Breath |
+| White | 16   | 16   | 16   | 19   | +15     | small | 1d4 + 2 | True Seeing, Imm. Paralysis, Breath |
+
 
 {% include notes.html content="
 The Revised Sorcerer is very different from their 3E counterpart.<br><br>

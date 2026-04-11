@@ -7,14 +7,14 @@ has_toc: false
 # Poplar's Overrides
 
 {: .summary}
-> A drop-in mod for changing how classes and races work.
+> A drop-in mod that changes how classes and races work.
+
+v0.2.0 - Under Testing
+{: .label .label-yellow }
 
 ### Overview
 
-*Poplar's Overrides* is a set of tweaks for the original campaigns. It changes the behavior of classes and races, offering a different experience for players.
-
-v0.0.1 - Under Testing
-{: .label .label-yellow }
+*Poplar's Overrides* is a set of tweaks for the original campaigns. It changes the mechanics of the base game, offering a different experience for players.
 
 ### Installation
 
