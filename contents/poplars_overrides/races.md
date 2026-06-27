@@ -17,14 +17,14 @@ nav_order: 0
 | Favored Class  | Any                              |
 | Darkvision?    | No                               |
 | Feat           | Skilled (+1 Skill Point / Level) |
-| Feat           | Quick to Master                  |
+| Feat           | Quick to Master (Free Feat)      |
 
 
 
 ### Half-Elf
 
 {: .summary}
-> Half-Elves are naturally gregarious with a +5 to Persuade and Appraise. They make excellent Bards and Sorcerers.
+> Half-Elves are naturally gregarious with a +5 to Persuade and Appraise. They gain a bonus to Charisma, but a penalty to Wisdom.
 
 | -------------- | ------------------------------- |
 | Ability Scores | +2 CHA, -2 WIS                  |
@@ -38,10 +38,10 @@ nav_order: 0
 ### Dwarf
 
 {: .summary}
-> Dwarves benefit from higher health and better fortitude saves. They make for sturdy Fighters.
+> Dwarves benefit from higher health and better fortitude saves. They gain a bonus to Constitution, but a penalty to Dexterity.
 
 | -------------- | --------------------------- |
-| Ability Scores | +2 CON, -2 CHA              |
+| Ability Scores | +2 CON, -2 DEX              |
 | Favored Class  | Fighter                     |
 | Darkvision?    | Yes                         |
 | Feat           | Light & Medium Armor        |
@@ -52,7 +52,7 @@ nav_order: 0
 ### Elf
 
 {: .summary}
-> Elves can sense traps without slowing down and have a higher base movement speed. They are natural scouts whose talents pair well with the Ranger class.
+> Elves can sense hidden things with ease and have a higher base movement speed. They gain a bonus to Dexterity, but a penalty to Constitution.
 
 | -------------- | ------------------------ |
 | Ability Scores | +2 DEX, -2 CON           |
@@ -60,13 +60,13 @@ nav_order: 0
 | Darkvision?    | Yes                      |
 | Feat           | Elven Weapons            |
 | Feat           | Keen Senses              |
-| Feat           | 10% Movement Speed Bonus |
+| Feat           | Barbarian Fast Movement  |
 
 
 ### Half-Orc
 
 {: .summary}
-> Half-Orcs have animalistic strength and instincts. Many favor the unrestrained path of a Barbarian.
+> Half-Orcs have instinctual fighting skills. They gain a bonus to Strength, but a penalty to Charisma.
 
 | -------------- | ----------------------- |
 | Ability Scores | +2 STR, -2 INT          |
@@ -80,31 +80,27 @@ nav_order: 0
 ### Halfling
 
 {: .summary} 
-> Halflings are exceptionally agile, able to maneuver through narrow openings and strike from unexpected angles. They often serve as Rogues in adventuring parties. 
+> Halflings face danger with remarkable pluck. They gain a bonus to Dexterity, but a penalty to Strength.
 
-| -------------- | -------------- |
-| Ability Scores | +2 DEX, -2 STR |
-| Favored Class  | Rogue          |
-| Darkvision?    | No             |
-| Feat           | Small          |
-| Feat           | Weapon Finesse |
-| Feat           | Spring Attack  |
+| -------------- | ---------------------- |
+| Ability Scores | +2 DEX, -2 STR         |
+| Favored Class  | Rogue                  |
+| Darkvision?    | No                     |
+| Feat           | Small + Weapon Finesse |
+| Feat           | Spring Attack          |
+| Feat           | Aura of Courage        |
 
 
 ### Gnome
 
 {: .summary}
-> Gnomes have an innate familiarity with mechanical and magical devices, as well as a broad aptitude for learning. They make for talented Wizards.
+> Gnomes have a wide range of interests and skills outside of their adventuring occupation. They gain a bonus to Intelligence, but a penalty to Strength.
 
-| -------------- | ------------------------------------------------------------------ |
-| Ability Scores | +2 INT, -2 STR                                                     |
-| Favored Class  | Wizard                                                             |
-| Darkvision?    | Yes                                                                |
-| Feat           | Small                                                              |
-| Feat           | Very Skilled (+2 Skill Points / Level)                             |
-| Feat           | Skill Focus: Disable Device, Set Trap, Open Lock, Use Magic Device |
-
-
-
-
+| -------------- | ---------------------------------------|
+| Ability Scores | +2 INT, -2 STR                         |
+| Favored Class  | Wizard                                 |
+| Darkvision?    | Yes                                    |
+| Feat           | Small + Weapon Finesse                 |
+| Feat           | Spell Focus: Illusion                  |
+| Feat           | Very Skilled (+2 Skill Points / Level) |
 

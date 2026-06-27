@@ -12,6 +12,7 @@ h2,
 .text-beta,
 #toctitle {
   @include fs-6;
+  text-transform: uppercase;
 }
 
 h3,

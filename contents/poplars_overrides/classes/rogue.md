@@ -1,14 +1,16 @@
 ---
 layout: default
 title: Rogue
-parent: Poplar's Overrides
+parent: Classes
+grand_parent: Poplar's Overrides
 nav_order: 1
 ---
 
 # Rogue
 
-{: .summary}
-> The quintessential adventurer, Rogues are swashbuckling tomb raiders with many talents.
+{% include header_rogue.md %}
+
+### Details
 
 | Level | Feats      | Sneak Attack | Uncanny Dodge | Self-Concealment |
 | ----- | ---------- | ------------ | ------------- | ---------------- |
@@ -33,19 +35,12 @@ nav_order: 1
 | 19    |            | 10d6         | 6             | 30%              |
 | 20    | Bonus Feat | 10d6         | 6             | 30%              |
 
-**Hit die**: d6
-    
-**Proficiencies**: armor (light), shields, weapons (simple, rogue)
-    
-**Skill points**: 8 + int modifier ( (4 + int modifier) * 4 at 1st level) 
-    
-**BaB Progression**: +3/4 level (Medium)
-    
+
 **Skill List**: all
 
 **Bonus Feats**: crippling strike, defensive roll, improved evasion, opportunist, skill mastery, slippery mind, hide in plain sight, use poison, weapon finesse, dodge, mobility, spring attack
     
-**Special**: gains concealment at higher levels
+**Special**: Rogues improve their Sneak Attack and Uncanny Dodge every third level. They gain concealment bonuses every sixth level.
 
 
 {% include notes.html content="

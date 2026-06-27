@@ -1,14 +1,16 @@
 ---
 layout: default
 title: Wizard
-parent: Poplar's Overrides
+parent: Classes
+grand_parent: Poplar's Overrides
 nav_order: 1
 ---
 
 # Wizard
 
-{: .summary}
-> Scholars of the Weave, Wizards are unmatched in spellcraft and artifice.
+{% include header_wizard.md %}
+
+### Details
 
 | Level | Feats                                      |
 | ----- | ------------------------------------------ |
@@ -33,14 +35,6 @@ nav_order: 1
 | 19    |                                            |
 | 20    |                                            |
 
-**Hit Die**: d4
-
-**Proficiencies**: no armor, weapons (wizard) 
-
-**Skill Points**: 2 + int modifier ( (2 + int modifier) * 4 at 1st level)   
-
-**BaB Progression**: +1/2 / level (Low)  
-
 **Bonus Feat List**: spell focus, greater spell focus
 
 **Skill List**: concentration, craft armor, craft trap, craft weapon, heal, lore, spellcraft, *persuasion*, *appraise*
@@ -61,18 +55,9 @@ nav_order: 1
 | Necromancy    | Conjuration    |
 | Transmutation | Conjuration    |
 
-### Spell Progression
-
-{% include full_caster.md %}
-
-{: .summary}
-> Wizards that specialize in a school of magic gain one additional spell slot per level.
-
 
 {% include notes.html content="
-The Revised Wizard is nearly identical to their 3E counterpart.<br><br>
+Wizards continue to be the most versatile spellcasters. In exchange for losing their typical bonus feats, they gain crafting feats automatically, as well as two spell focus feats at levels 1 and 10.<br><br>
 
-Wizards continue to be the most versatile spellcasters, even more so under the overrides system. They are the only class to retain access to their full spell list.<br><br>
-
-The opposition schools have been reworked to impose a greater cost for most specialties. In particular, the Conjuration school has been singled out as a tradeoff for most specializations. Losing access to spells such as *Summon Creature*, *Mage Armor*, and *Melf's Acid Arrow* is judged to be a fairer exchange for a large increase in spells-per-day.
+Wizards that specialize in a school will lose access to Conjuration (summoning magic). If they specialize in Conjuration, they lose access to Evocation instead.
 " %}

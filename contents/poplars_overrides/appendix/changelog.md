@@ -33,4 +33,13 @@ grand_parent: Poplar's Overrides
 
 ### v0.2.0
 
-* Publish previous changes.
+* Cleric, Druid, and Sorcerer
+  * Revised spellbooks.
+  * Reduced spell availability was impacting enemy AI, expanding the spells closer to the original game.
+
+* Paladin
+  * Changed spell list around.
+
+* Ranger
+  * Changed feat progression.
+  * Reimplemented two-weapon fighting as a free feat path.
