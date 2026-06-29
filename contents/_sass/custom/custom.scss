@@ -5,13 +5,14 @@
     gap: 20px; /* Space between columns */
 }
 
-.grid-item {
-    padding: 20px; /* Padding inside each grid item */
+.grid-left {
+  padding-left: 20px;
 }
 
 .grid-right {
   background-color: $orange-300;
   margin: 10px;
+  padding-left: 10px;
   border-radius: 10px;
 }
 
@@ -19,7 +20,32 @@
   margin: 20px;
 }
 
-//
+div.dt-buttons > .dt-button {
+  background-color: #d2854541 !important;
+  border-radius: 10px !important;
+  border-color: #d2854541 !important;
+  span {
+    font-family: "Aref Ruqaa", serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+}
+
+div.dt-buttons > .clearbutton {
+  width: calc(20vw);
+}
+
+div.dt-container .dt-search input {
+  border-radius: 10px !important;
+}
+
+.dt-search > .dt-input {
+  width: calc(75vw);
+  height: 100%;
+}
+.search-title {
+  margin-left: 20px;
+}
 
 .aref-ruqaa-regular {
   font-family: "Aref Ruqaa", serif;

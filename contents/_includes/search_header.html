@@ -1,201 +1,188 @@
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
 
-  <link rel="stylesheet" href="{{ '/assets/css/just-the-docs-default.css' | relative_url }}">
-  <link rel="stylesheet" href="{{ '/assets/css/just-the-docs-head-nav.css' | relative_url }}" id="jtd-head-nav-stylesheet">
-  <link rel="stylesheet" href="{{ '/assets/css/datatables.css' | relative_url }}" />
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Aref+Ruqaa:wght@400;700&display=swap" rel="stylesheet">
-  <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+  <link
+    rel="stylesheet"
+    href="{{ '/assets/css/just-the-docs-default.css' | relative_url }}"
+  />
+  <link
+    rel="stylesheet"
+    href="{{ '/assets/css/just-the-docs-head-nav.css' | relative_url }}"
+    id="jtd-head-nav-stylesheet"
+  />
+  <link
+    rel="stylesheet"
+    href="{{ '/assets/css/datatables.css' | relative_url }}"
+  />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Aref+Ruqaa:wght@400;700&display=swap"
+    rel="stylesheet"
+  />
+  <script
+    src="https://code.jquery.com/jquery-3.7.1.min.js"
+    integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+    crossorigin="anonymous"
+  ></script>
   <script src="{{ '/assets/js/datatables.js' | relative_url }}"></script>
   <script defer type="module">
-    DataTable.defaults.layout = {
-        top: "search",
+    //remove the default 'Search' text for all DataTable search boxes
+    $.extend(true, $.fn.dataTable.defaults, {
+        language: {
+            search: ""
+        }
+    });
+
+    let table = new DataTable("#Vault", {
+      scrollY: "",
+      paging: false,
+      order: [[5, "desc"]],
+      layout: {
+        top1: null,
+        top1Start: "search",
+        top1End: {
+          buttons: [
+            {
+              text: "Clear Filters",
+              className: "clearbutton",
+              action: function (e, dt, node, config) {
+                const matches = document.querySelectorAll(".dt-button");
+                matches.forEach(b => {
+                    b.style.color = '#5c5962';
+                });
+                dt.columns(6).search("", true, false, true).draw();
+              },
+            },
+          ],
+        },
         topStart: null,
         topEnd: null,
-    };
-    let table = new DataTable('#Vault', 
-    {
-      scrollY: '',
-      paging: false,
-      order: [[5, 'desc']], 
-      columnDefs: [
-        {
-            searchPanes: {
-                show: true,
-                initCollapsed: true,
-                orderable: false,
-                options: [
-                    {
-                        label: '< 01 Year Ago',
-                        value: function (rowData, rowIdx) {
-                            let target = new Date(rowData[4]);
-                            let d = new Date();
-                            d.setFullYear(d.getFullYear() - 1);
-                            
-                            return target >= d;
-                        }
-                    },
-                    {
-                        label: '< 05 Years Ago',
-                        value: function (rowData, rowIdx) {
-                            let target = new Date(rowData[4]);
-                            let d = new Date();
-                            d.setFullYear(d.getFullYear() - 5);
-                            
-                            return target >= d;
-                        }
-                    },
-                    {
-                        label: '< 10 Years Ago',
-                        value: function (rowData, rowIdx) {
-                            let target = new Date(rowData[4]);
-                            let d = new Date();
-                            d.setFullYear(d.getFullYear() - 10);
-                            
-                            return target >= d;
-                        }
-                    },
-                    {
-                        label: '< 20 Years Ago',
-                        value: function (rowData, rowIdx) {
-                            let target = new Date(rowData[4]);
-                            let d = new Date();
-                            d.setFullYear(d.getFullYear() - 20);
-                            
-                            return target >= d;
-                        }
-                    },
-                ]
+        top: {
+          buttons: [
+            {
+              text: "Hall of Fame",
+              action: function (e, dt, node, config) {
+                const matches = document.querySelectorAll(".dt-button");
+                matches.forEach(b => {
+                    b.style.color = '#5c5962';
+                });
+                node[0].style.color = 'blue';
+                dt.columns(6).search("Hall of Fame", true, false, true).draw();
+              },
             },
-            targets: [4]
-        },
-        {
-            searchPanes: {
-                show: true,
-                initCollapsed: true,
+            {
+              text: "Hack & Slash",
+              action: function (e, dt, node, config) {
+                const matches = document.querySelectorAll(".dt-button");
+                matches.forEach(b => {
+                    b.style.color = '#5c5962';
+                });
+                node[0].style.color = 'blue';
+                dt.columns(6).search("Hack & Slash", true, false, true).draw();
+              },
             },
-            targets: [1]
-        },
-        {
-            searchPanes: {
-                show: true,
-                initCollapsed: true,
-                options: [
-                    {
-                        label: 'Hall of Fame',
-                        value: function (rowData, rowIdx) {
-                            return rowData[6].includes('Hall of Fame');
-                        }
-                    },
-                    {
-                        label: 'Hack & Slash',
-                        value: function (rowData, rowIdx) {
-                            return rowData[6].includes('Hack &amp; Slash');
-                        }
-                    },
-                    {
-                        label: 'Tricks & Traps',
-                        value: function (rowData, rowIdx) {
-                            return rowData[6].includes('Tricks &amp; Traps');
-                        }
-                    },
-                    {
-                        label: 'Roleplay',
-                        value: function (rowData, rowIdx) {
-                            return rowData[6].includes('Roleplay');
-                        }
-                    },
-                    {
-                        label: 'Horror',
-                        value: function (rowData, rowIdx) {
-                            return rowData[6].includes('Horror');
-                        }
-                    },
-                    {
-                        label: 'Multiplayer',
-                        value: function (rowData, rowIdx) {
-                            return rowData[6].includes('Multiplayer');
-                        }
-                    },
-                    {
-                        label: 'Adult Content',
-                        value: function (rowData, rowIdx) {
-                            return rowData[6].includes('Adult Content');
-                        }
-                    },
-                    {
-                        label: 'Pregenerated Character',
-                        value: function (rowData, rowIdx) {
-                            return rowData[6].includes('Pregenerated');
-                        }
-                    },
-                    {
-                        label: 'PnP',
-                        value: function (rowData, rowIdx) {
-                            return rowData[6].includes('PnP');
-                        }
-                    },
-                ]
+            {
+              text: "Roleplay",
+              action: function (e, dt, node, config) {
+                const matches = document.querySelectorAll(".dt-button");
+                matches.forEach(b => {
+                    b.style.color = '#5c5962';
+                });
+                node[0].style.color = 'blue';
+                dt.columns(6).search("Roleplay", true, false, true).draw();
+              },
             },
-            targets: [6]
+            {
+              text: "Tricks & Traps",
+              action: function (e, dt, node, config) {
+                const matches = document.querySelectorAll(".dt-button");
+                matches.forEach(b => {
+                    b.style.color = '#5c5962';
+                });
+                node[0].style.color = 'blue';
+                dt.columns(6)
+                  .search("Tricks & Traps", true, false, true)
+                  .draw();
+              },
+            },
+            {
+              text: "Horror",
+              action: function (e, dt, node, config) {
+                const matches = document.querySelectorAll(".dt-button");
+                matches.forEach(b => {
+                    b.style.color = '#5c5962';
+                });
+                node[0].style.color = 'blue';
+                dt.columns(6).search("Horror", true, false, true).draw();
+              },
+            },
+            {
+              text: "PnP",
+              action: function (e, dt, node, config) {
+                const matches = document.querySelectorAll(".dt-button");
+                matches.forEach(b => {
+                    b.style.color = '#5c5962';
+                });
+                node[0].style.color = 'blue';
+                dt.columns(6).search("PnP", true, false, true).draw();
+              },
+            },
+            {
+              text: "Multiplayer",
+              action: function (e, dt, node, config) {
+                const matches = document.querySelectorAll(".dt-button");
+                matches.forEach(b => {
+                    b.style.color = '#5c5962';
+                });
+                node[0].style.color = 'blue';
+                dt.columns(6).search("Multiplayer", true, false, true).draw();
+              },
+            },
+            {
+              text: "Enhanced Edition",
+              action: function (e, dt, node, config) {
+                const matches = document.querySelectorAll(".dt-button");
+                matches.forEach(b => {
+                    b.style.color = '#5c5962';
+                });
+                node[0].style.color = 'blue';
+                dt.columns(6).search("Enhanced Edition", true, false, true).draw();
+              },
+            },
+          ],
         },
-      ],
-      layout: {
-          top1: {
-              searchPanes: {
-                  columns: [4, 1, 6]
-              }
-          }
       },
-});
-
-    table.on('select.dt', () => {
-        table.searchPanes.rebuildPane(0, true);
-    });
-    
-    table.on('deselect.dt', () => {
-        table.searchPanes.rebuildPane(0, true);
     });
 
-    $(document).ready( function () {
-        $('#Vault').DataTable();
+    //custom format of Search boxes
+    $('[type=search]').each(function () {
+        $(this).attr("placeholder", "Search...");
+        $(this).before('<span class="fa fa-search"></span>');
+    });
+
+    table.on("select.dt", () => {
+      table.searchPanes.rebuildPane(0, true);
+    });
+
+    table.on("deselect.dt", () => {
+      table.searchPanes.rebuildPane(0, true);
+    });
+
+    $(document).ready(function () {
+      $("#Vault").DataTable();
     });
   </script>
 
-
   <style id="jtd-nav-activation">
-  {% include css/activation.scss.liquid %}
+    {% include css/activation.scss.liquid %}
   </style>
 
-  {% if site.ga_tracking != nil %}
-    {% assign ga_tracking_ids = site.ga_tracking | split: "," %}
-    <script async src="https://www.googletagmanager.com/gtag/js?id={{ ga_tracking_ids.first }}"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-
-      {% for ga_property in ga_tracking_ids %}
-        gtag('config', '{{ ga_property }}'{% unless site.ga_tracking_anonymize_ip == nil %}, { 'anonymize_ip': true }{% endunless %});
-      {% endfor %}
-    </script>
-  {% endif %}
-
-  {% if site.search_enabled != false %}
-    <script src="{{ '/assets/js/vendor/lunr.min.js' | relative_url }}"></script>
-  {% endif %}
-
+  <!-- <script src="{{ '/assets/js/vendor/lunr.min.js' | relative_url }}"></script> -->
   <script src="{{ '/assets/js/just-the-docs.js' | relative_url }}"></script>
 
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-  {% include_cached favicon.html %}
-
-  {% seo %}
-
-  {% include head_custom.html %}
-
+  {% include_cached favicon.html %} {% seo %} {% include head_custom.html %}
 </head>
