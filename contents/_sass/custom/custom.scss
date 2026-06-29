@@ -16,8 +16,12 @@
   border-radius: 10px;
 }
 
+.search-body {
+  // background-color: lightgray;
+}
+
 .dt-container {
-  margin: 20px;
+  margin: 0px 20px 20px 20px;
 }
 
 div.dt-buttons > .dt-button {
@@ -43,9 +47,24 @@ div.dt-container .dt-search input {
   width: calc(75vw);
   height: 100%;
 }
+
+div.dt-container div.dt-layout-row {
+  margin: 0px !important;
+}
+
+
+// Search header.
+.search-nav-bar {
+  background-color: $orange-100;
+}
 .search-title {
   margin-left: 20px;
+  margin-bottom: 0px;
+  padding-bottom: 10px;
+  color: white;
+  text-align: center;
 }
+
 
 .aref-ruqaa-regular {
   font-family: "Aref Ruqaa", serif;

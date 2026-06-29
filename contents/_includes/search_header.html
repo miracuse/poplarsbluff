@@ -40,9 +40,9 @@
       paging: false,
       order: [[5, "desc"]],
       layout: {
-        top1: null,
-        top1Start: "search",
-        top1End: {
+        top2: null,
+        top2Start: "search",
+        top2End: {
           buttons: [
             {
               text: "Clear Filters",
@@ -50,9 +50,37 @@
               action: function (e, dt, node, config) {
                 const matches = document.querySelectorAll(".dt-button");
                 matches.forEach(b => {
-                    b.style.color = '#5c5962';
+                    b.style.setProperty("background-color", "#d2854541", "important")
                 });
                 dt.columns(6).search("", true, false, true).draw();
+              },
+            },
+          ],
+        },
+        top1Start: null,
+        top1End: null,
+        top1: {
+          buttons: [
+            {
+              text: "Hall of Fame",
+              action: function (e, dt, node, config) {
+                const matches = document.querySelectorAll(".dt-button");
+                matches.forEach(b => {
+                    b.style.setProperty("background-color", "#d2854541", "important")
+                });
+                node[0].style.setProperty("background-color", "#add8e6", "important")
+                dt.columns(6).search("Hall of Fame", true, false, true).draw();
+              },
+            },
+            {
+              text: "Enhanced Edition",
+              action: function (e, dt, node, config) {
+                const matches = document.querySelectorAll(".dt-button");
+                matches.forEach(b => {
+                    b.style.setProperty("background-color", "#d2854541", "important")
+                });
+                node[0].style.setProperty("background-color", "#add8e6", "important")
+                dt.columns(6).search("Enhanced Edition", true, false, true).draw();
               },
             },
           ],
@@ -62,24 +90,35 @@
         top: {
           buttons: [
             {
-              text: "Hall of Fame",
+              text: "Adult Content",
               action: function (e, dt, node, config) {
                 const matches = document.querySelectorAll(".dt-button");
                 matches.forEach(b => {
-                    b.style.color = '#5c5962';
+                    b.style.setProperty("background-color", "#d2854541", "important")
                 });
-                node[0].style.color = 'blue';
-                dt.columns(6).search("Hall of Fame", true, false, true).draw();
+                node[0].style.setProperty("background-color", "#add8e6", "important")
+                dt.columns(6).search("Adult Content", true, false, true).draw();
               },
-            },
-            {
+            },  
+          {
+              text: "Dungeon",
+              action: function (e, dt, node, config) {
+                const matches = document.querySelectorAll(".dt-button");
+                matches.forEach(b => {
+                    b.style.setProperty("background-color", "#d2854541", "important")
+                });
+                node[0].style.setProperty("background-color", "#add8e6", "important")
+                dt.columns(6).search("Dungeon", true, false, true).draw();
+              },
+            },  
+          {
               text: "Hack & Slash",
               action: function (e, dt, node, config) {
                 const matches = document.querySelectorAll(".dt-button");
                 matches.forEach(b => {
-                    b.style.color = '#5c5962';
+                    b.style.setProperty("background-color", "#d2854541", "important")
                 });
-                node[0].style.color = 'blue';
+                node[0].style.setProperty("background-color", "#add8e6", "important")
                 dt.columns(6).search("Hack & Slash", true, false, true).draw();
               },
             },
@@ -88,9 +127,9 @@
               action: function (e, dt, node, config) {
                 const matches = document.querySelectorAll(".dt-button");
                 matches.forEach(b => {
-                    b.style.color = '#5c5962';
+                    b.style.setProperty("background-color", "#d2854541", "important")
                 });
-                node[0].style.color = 'blue';
+                node[0].style.setProperty("background-color", "#add8e6", "important")
                 dt.columns(6).search("Roleplay", true, false, true).draw();
               },
             },
@@ -99,60 +138,48 @@
               action: function (e, dt, node, config) {
                 const matches = document.querySelectorAll(".dt-button");
                 matches.forEach(b => {
-                    b.style.color = '#5c5962';
+                    b.style.setProperty("background-color", "#d2854541", "important")
                 });
-                node[0].style.color = 'blue';
+                node[0].style.setProperty("background-color", "#add8e6", "important")
                 dt.columns(6)
                   .search("Tricks & Traps", true, false, true)
                   .draw();
               },
             },
             {
-              text: "Horror",
+              text: "Dark",
               action: function (e, dt, node, config) {
                 const matches = document.querySelectorAll(".dt-button");
                 matches.forEach(b => {
-                    b.style.color = '#5c5962';
+                    b.style.setProperty("background-color", "#d2854541", "important")
                 });
-                node[0].style.color = 'blue';
-                dt.columns(6).search("Horror", true, false, true).draw();
+                node[0].style.setProperty("background-color", "#add8e6", "important")
+                dt.columns(6).search("Dark", true, false, true).draw();
               },
             },
             {
-              text: "PnP",
+              text: "Pen & Paper",
               action: function (e, dt, node, config) {
                 const matches = document.querySelectorAll(".dt-button");
                 matches.forEach(b => {
-                    b.style.color = '#5c5962';
+                    b.style.setProperty("background-color", "#d2854541", "important")
                 });
-                node[0].style.color = 'blue';
-                dt.columns(6).search("PnP", true, false, true).draw();
+                node[0].style.setProperty("background-color", "#add8e6", "important")
+                dt.columns(6).search("Pen & Paper", true, false, true).draw();
               },
             },
-            {
+                      {
               text: "Multiplayer",
               action: function (e, dt, node, config) {
                 const matches = document.querySelectorAll(".dt-button");
                 matches.forEach(b => {
-                    b.style.color = '#5c5962';
+                    b.style.setProperty("background-color", "#d2854541", "important")
                 });
-                node[0].style.color = 'blue';
+                node[0].style.setProperty("background-color", "#add8e6", "important")
                 dt.columns(6).search("Multiplayer", true, false, true).draw();
               },
-            },
-            {
-              text: "Enhanced Edition",
-              action: function (e, dt, node, config) {
-                const matches = document.querySelectorAll(".dt-button");
-                matches.forEach(b => {
-                    b.style.color = '#5c5962';
-                });
-                node[0].style.color = 'blue';
-                dt.columns(6).search("Enhanced Edition", true, false, true).draw();
-              },
-            },
-          ],
-        },
+            },]
+        }
       },
     });
 
