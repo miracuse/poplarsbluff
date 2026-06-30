@@ -69,12 +69,12 @@
       }
     ],
       layout: {
-        top2: "search",
+        top3: "search",
+        top3Start: null,
+        top3End: null,
         top2Start: null,
         top2End: null,
-        top1Start: null,
-        top1End: null,
-        top1: {
+        top2: {
           buttons: [
             {
               text: "Hall of Fame",
@@ -100,9 +100,9 @@
             }
           ],
         },
-        topStart: null,
-        topEnd: null,
-        top: {
+        top1Start: null,
+        top1End: null,
+        top1: {
           buttons: [
             {
               text: "Adult Content",
@@ -145,7 +145,10 @@
               action: filterFunction,
             },
           ]
-        }
+        },
+        top: "info",
+        topStart: null,
+        topEnd: null,
       },
     });
 
