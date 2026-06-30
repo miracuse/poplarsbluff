@@ -16,10 +16,6 @@
   border-radius: 10px;
 }
 
-.search-body {
-  // background-color: lightgray;
-}
-
 .dt-container {
   margin: 0px 20px 20px 20px;
 }
@@ -37,6 +33,7 @@ div.dt-buttons > .dt-button {
 
 div.dt-buttons > .clearbutton {
   width: calc(20vw);
+  background-color: #DDD !important;
 }
 
 div.dt-container .dt-search input {
@@ -44,8 +41,11 @@ div.dt-container .dt-search input {
 }
 
 .dt-search > .dt-input {
-  width: calc(75vw);
-  height: 100%;
+  width: calc(95vw);
+  // height: 100%;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  background-color: $orange-300 !important;
 }
 
 div.dt-container div.dt-layout-row {

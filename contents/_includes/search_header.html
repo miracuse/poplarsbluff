@@ -35,54 +35,69 @@
         }
     });
 
+    let filterFunction = function (e, dt, node, config) {
+      // Grab the button's current color.
+      let cl = node[0].style.getPropertyValue("background-color")
+      let q = ` ${node[0].textContent}`
+
+      // If the button is active, disable it.
+      if (cl && cl == "rgb(173, 216, 230)") {
+        query = query.replace(q, "")
+        node[0].style.setProperty("background-color", "#d2854541", "important")
+        dt.columns(2).search(query, false, true, true).draw();
+      }
+
+      // Otherwise, activate it.
+      else {
+        query += q;
+        node[0].style.setProperty("background-color", "#add8e6", "important")
+        dt.columns(2).search(query, false, true, true).draw();
+      }
+    };
+
+    let query = "";
     let table = new DataTable("#Vault", {
       scrollY: "",
       paging: false,
-      order: [[5, "desc"]],
+      order: [[3, "desc"]],
+      columnDefs: [
+      {
+        targets: 3,
+        render: function (data, type, row) {
+          return '★'.repeat(data);
+        }
+      }
+    ],
       layout: {
-        top2: null,
-        top2Start: "search",
-        top2End: {
-          buttons: [
-            {
-              text: "Clear Filters",
-              className: "clearbutton",
-              action: function (e, dt, node, config) {
-                const matches = document.querySelectorAll(".dt-button");
-                matches.forEach(b => {
-                    b.style.setProperty("background-color", "#d2854541", "important")
-                });
-                dt.columns(6).search("", true, false, true).draw();
-              },
-            },
-          ],
-        },
+        top2: "search",
+        top2Start: null,
+        top2End: null,
         top1Start: null,
         top1End: null,
         top1: {
           buttons: [
             {
               text: "Hall of Fame",
+              className: "filterbutton",
+              action: filterFunction,
+            },
+            {
+              text: "Clear Filters",
+              className: "clearbutton",
               action: function (e, dt, node, config) {
-                const matches = document.querySelectorAll(".dt-button");
+                const matches = document.querySelectorAll(".filterbutton");
                 matches.forEach(b => {
                     b.style.setProperty("background-color", "#d2854541", "important")
                 });
-                node[0].style.setProperty("background-color", "#add8e6", "important")
-                dt.columns(6).search("Hall of Fame", true, false, true).draw();
+                query = ""
+                dt.columns(2).search(query, false, true, true).draw();
               },
             },
             {
               text: "Enhanced Edition",
-              action: function (e, dt, node, config) {
-                const matches = document.querySelectorAll(".dt-button");
-                matches.forEach(b => {
-                    b.style.setProperty("background-color", "#d2854541", "important")
-                });
-                node[0].style.setProperty("background-color", "#add8e6", "important")
-                dt.columns(6).search("Enhanced Edition", true, false, true).draw();
-              },
-            },
+              className: "filterbutton",
+              action: filterFunction,
+            }
           ],
         },
         topStart: null,
@@ -91,94 +106,45 @@
           buttons: [
             {
               text: "Adult Content",
-              action: function (e, dt, node, config) {
-                const matches = document.querySelectorAll(".dt-button");
-                matches.forEach(b => {
-                    b.style.setProperty("background-color", "#d2854541", "important")
-                });
-                node[0].style.setProperty("background-color", "#add8e6", "important")
-                dt.columns(6).search("Adult Content", true, false, true).draw();
-              },
-            },  
-          {
+              className: "filterbutton",
+              action: filterFunction, 
+            }, 
+            {
               text: "Dungeon",
-              action: function (e, dt, node, config) {
-                const matches = document.querySelectorAll(".dt-button");
-                matches.forEach(b => {
-                    b.style.setProperty("background-color", "#d2854541", "important")
-                });
-                node[0].style.setProperty("background-color", "#add8e6", "important")
-                dt.columns(6).search("Dungeon", true, false, true).draw();
-              },
+              className: "filterbutton",
+              action: filterFunction,
             },  
-          {
+            {
               text: "Hack & Slash",
-              action: function (e, dt, node, config) {
-                const matches = document.querySelectorAll(".dt-button");
-                matches.forEach(b => {
-                    b.style.setProperty("background-color", "#d2854541", "important")
-                });
-                node[0].style.setProperty("background-color", "#add8e6", "important")
-                dt.columns(6).search("Hack & Slash", true, false, true).draw();
-              },
+              className: "filterbutton",
+              action: filterFunction,
             },
             {
               text: "Roleplay",
-              action: function (e, dt, node, config) {
-                const matches = document.querySelectorAll(".dt-button");
-                matches.forEach(b => {
-                    b.style.setProperty("background-color", "#d2854541", "important")
-                });
-                node[0].style.setProperty("background-color", "#add8e6", "important")
-                dt.columns(6).search("Roleplay", true, false, true).draw();
-              },
+              className: "filterbutton",
+              action: filterFunction,
             },
             {
               text: "Tricks & Traps",
-              action: function (e, dt, node, config) {
-                const matches = document.querySelectorAll(".dt-button");
-                matches.forEach(b => {
-                    b.style.setProperty("background-color", "#d2854541", "important")
-                });
-                node[0].style.setProperty("background-color", "#add8e6", "important")
-                dt.columns(6)
-                  .search("Tricks & Traps", true, false, true)
-                  .draw();
-              },
+              className: "filterbutton",
+              action: filterFunction,
             },
             {
               text: "Dark",
-              action: function (e, dt, node, config) {
-                const matches = document.querySelectorAll(".dt-button");
-                matches.forEach(b => {
-                    b.style.setProperty("background-color", "#d2854541", "important")
-                });
-                node[0].style.setProperty("background-color", "#add8e6", "important")
-                dt.columns(6).search("Dark", true, false, true).draw();
-              },
+              className: "filterbutton",
+              action: filterFunction,
             },
             {
               text: "Pen & Paper",
-              action: function (e, dt, node, config) {
-                const matches = document.querySelectorAll(".dt-button");
-                matches.forEach(b => {
-                    b.style.setProperty("background-color", "#d2854541", "important")
-                });
-                node[0].style.setProperty("background-color", "#add8e6", "important")
-                dt.columns(6).search("Pen & Paper", true, false, true).draw();
-              },
+              className: "filterbutton",
+              action: filterFunction,
             },
-                      {
+            {
               text: "Multiplayer",
-              action: function (e, dt, node, config) {
-                const matches = document.querySelectorAll(".dt-button");
-                matches.forEach(b => {
-                    b.style.setProperty("background-color", "#d2854541", "important")
-                });
-                node[0].style.setProperty("background-color", "#add8e6", "important")
-                dt.columns(6).search("Multiplayer", true, false, true).draw();
-              },
-            },]
+              className: "filterbutton",
+              action: filterFunction,
+            },
+          ]
         }
       },
     });
